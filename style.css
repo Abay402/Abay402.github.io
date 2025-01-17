@@ -72,13 +72,20 @@ footer {
 
 /* Projects Page Specific */
 .project {
+    margin-bottom: 25rem;
+    border: 15px solid #b73030;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 55px;
+}
+/* Projects Page Specific */
+/* .project {
     margin-bottom: 2rem;
     border: 1px solid #ddd;
     padding: 1rem;
     background: #fff;
     border-radius: 5px;
-}
-
+} */
 .project h3 {
     margin-top: 0;
     color: #333;

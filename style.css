@@ -21,12 +21,22 @@ section h5{
     color: #7858ca;
 
 }
-div{
+body section .videoCaption{
 
-    width: 550px;
-    margin-left: auto;
-    margin-right: 0;
+    display: flex; /* Aligns children in a row by default */
+    align-items: center; /* Centers items vertically */
+    gap: 20px;
 }
+
+.video {
+    flex: 0 0 auto; /* Prevents the video from resizing unexpectedly */
+    max-width: 50%; /* Ensures the video doesn't take up too much space */
+  }
+  
+.text-content {
+    flex: 1; /* Makes the text container take up the remaining space */
+}
+
 body section p{
 
     margin: 0;

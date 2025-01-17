@@ -23,7 +23,7 @@ section h5{
 }
 div{
 
-    width: 250px;
+    width: 350px;
     margin-left: auto;
     margin-right: 0;
 }
@@ -38,7 +38,7 @@ body section p{
 body section div .index{
 
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     color: #7858ca;
     text-align: right;
 }

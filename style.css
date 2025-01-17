@@ -14,7 +14,7 @@ body {
     text-align: center;
     color: #333;
 }
-section h5{
+body section h5{
 
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;

@@ -23,7 +23,8 @@ section h5{
 }
 div{
 
-    width: 50px;
+    width: 250px;
+    align-self: right;
 }
 body section p{
 

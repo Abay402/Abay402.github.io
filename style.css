@@ -24,8 +24,8 @@ section h5{
 div{
 
     width: 250px;
-    align-self: right;
-    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
 }
 body section p{
 

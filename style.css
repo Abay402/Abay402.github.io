@@ -21,6 +21,10 @@ section h5{
     color: #7858ca;
 
 }
+div{
+
+    width: 50px;
+}
 body section p{
 
     margin: 0;
@@ -29,7 +33,7 @@ body section p{
 
 }
 
-body section .index{
+body section div .index{
 
     margin: 0;
     font-size: 1.2rem;

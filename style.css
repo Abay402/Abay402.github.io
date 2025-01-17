@@ -1,8 +1,8 @@
 /* General Styles */
 
 mark {
-    background-color: rgba(0, 0, 0, 0);
-    color: green;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: green !important;
 }
 
 body {

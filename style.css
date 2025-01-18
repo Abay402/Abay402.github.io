@@ -2,59 +2,50 @@
 
 mark {
     background-color: rgba(0, 0, 0, 0) !important;
-    color: green !important;
+    color:#53b4c1 !important;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.4;
     background-color: #f4f4f4;
     text-align: center;
     color: #333;
+    
+}
+
+body section .videoCaption{
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:25px;
+    width: 2500px;
+    gap: 100px;
+    display: flex;
 }
 section h5{
-
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    color: #7858ca;
-
+    margin-top:55px;
+    margin-bottom: 125px; /* Space below the header */
+    height:10px;
+    font-size: 3.5rem;
+    color: #417b83;
+    text-align: left;
+    
 }
-body section .videoCaption{
-
-    display: flex; /* Aligns children in a row by default */
-    align-items: center; /* Centers items vertically */
-    gap: 20px;
-}
-
-.video {
-    flex: 0 0 auto; /* Prevents the video from resizing unexpectedly */
-    max-width: 50%; /* Ensures the video doesn't take up too much space */
-  }
-  
-.text-content {
-    flex: 1; /* Makes the text container take up the remaining space */
-}
-
 body section p{
-
-    margin: 0;
-    font-size: 1.2rem;
-    color: #000000;
-
-}
-
-body section div .index{
-
-    margin: 0;
-    font-size: 2.2rem;
+    
+    margin: 110;
+    width: 800px;
+    font-size: 3.0rem;
     color: #7858ca;
-    text-align: right;
+    text-align: left;
 }
+
 
 header {
-    background: #333;
+    background: #417b83;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -85,7 +76,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00e600;
+    color: #53b4c1;
 }
 
 section {
@@ -140,7 +131,7 @@ footer {
 
 /* Contact Links */
 section a {
-    color: #00e600;
+    color: #53b4c1;
     text-decoration: none;
 }
 

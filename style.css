@@ -18,11 +18,12 @@ body {
 }
 
 body section .videoCaption{
-    margin-left:50px;
-    margin-right:50px;
-    margin-top:25px;
+    margin-left:100px;
+    margin-right:350px;
+    margin-top:85px;
+    margin-bottom:75px;
     width: 2100px;
-    gap: 120px;
+    gap: 100px;
     display: flex;
 }
 
@@ -30,13 +31,13 @@ body section .picCaption{
     margin-left:250px;
     margin-right:250px;
     margin-top:25px;
-    width: 2100px;
-    gap: 220px;
+    width: 2200px;
+    gap: 320px;
     display: flex;
 }
 
 section h5{
-    margin-top:15px;
+    margin-top:0px;
     margin-bottom: 75px; /* Space below the header */
     height:10px;
     font-size: 3.5rem;
@@ -56,8 +57,8 @@ section h3{
 body section p{
     
     margin: 110;
-    width: 800px;
-    font-size: 3.0rem;
+    width: 700px;
+    font-size: 2.5rem;
     color: #000000;
     text-align: left;
 }
@@ -86,6 +87,16 @@ header p {
     font-size: 1.2rem;
 }
 
+
+h6{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black; 
+    margin-top:25px;
+    margin-bottom:5px;
+    font-size:3rem;
+    
+}
+
 nav {
     background: #444;
     color: #fff;
@@ -97,7 +108,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 nav a:hover {
@@ -107,7 +118,6 @@ nav a:hover {
 section {
     padding: 2rem;
 }
-
 
 
 /* Projects Page Specific */
@@ -138,12 +148,71 @@ section {
     margin: 1rem 0;
 }
 
+.projectNav{
+    background: #444;
+    margin-bottom:0px;
+    margin-top:0px;
+    font-weight: bold;
+    height:35px;
+}
 /* Contact Links */
 section a {
-    color: #53b4c1;
+    margin-top: 15px;
+    margin-right: 5rem;;
+    font-size:2.5rem;
+    color: #ffffff;
     text-decoration: none;
 }
 
 section a:hover {
     text-decoration: underline;
+}
+
+li{
+    right: 0; /* Starts from the right */
+    margin-left:250px;
+    margin-right:75px;
+    text-align: left;
+    font-size:1.8rem;
+    margin-bottom:55px;
+
+}
+.list{
+    margin-top:55px;
+    display:flex;
+    gap:20px;
+
+
+}
+
+h2{
+    margin-top:0px;
+    font-size:3.0rem;
+    margin-left:250px;
+    text-align: left;
+}
+
+h4{
+
+    text-align:left;
+
+
+}
+
+ .contact{
+    
+    margin-left: 900px;
+    margin-top: 55px;
+    margin-right: 5rem;;
+    font-size:2.5rem;
+    text-decoration: none;
+    
+}
+
+.contactLinks{
+
+    
+    color: #417b83;
+    font-size:2.1rem;
+
 }

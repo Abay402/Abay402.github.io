@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.4;
-    background-color: #f4f4f4;
+    background-color: #d5d5d5;
     text-align: center;
     color: #333;
     
@@ -35,13 +35,22 @@ body section .picCaption{
     gap: 320px;
     display: flex;
 }
+body section .projectPicCaption{
+    margin-left:300px;
+    margin-right:250px;
+    margin-top:25px;
+    width: 2200px;
+    gap: 175px;
+    text-align: left;
+    display: flex;
+}
 
 section h5{
     margin-top:0px;
     margin-bottom: 75px; /* Space below the header */
     height:10px;
     font-size: 3.5rem;
-    color: #417b83;
+    color: #2d4f55;
     text-align: left;
 }
 section h3{
@@ -50,7 +59,7 @@ section h3{
     margin-bottom: 105px; /* Space below the header */
     height:10px;
     font-size: 3.5rem;
-    color: #417b83;
+    color: #2d4f55;
     text-align: left;
 }
 
@@ -71,7 +80,7 @@ body section .about{
 }
 
 header {
-    background: #417b83;
+    background: #3c6f76;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -190,12 +199,13 @@ h2{
     font-size:3.0rem;
     margin-left:250px;
     text-align: left;
+    color: #2d4f55;
 }
 
 h4{
 
     text-align:left;
-
+    color:#2d4f55;
 
 }
 

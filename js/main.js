@@ -44,17 +44,7 @@ if (deviceWidth >= 3840) {
 // 1080p Resolution
 scaleAllImages(0.75);
 scaleAllVideos(0.7);
-} else {
-// Default (Below 1080p)
-img.forEach((el) => {
-el.style.width = "100%";
-el.style.height = "auto";
-});
-iframe.forEach((el) => {
-el.style.width = "100%";
-el.style.height = "auto";
-});
-}
+} 
 }
 
 // Call function on load and resize

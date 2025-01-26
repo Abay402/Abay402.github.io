@@ -201,3 +201,11 @@ h4{
     font-size:2.1rem;
 
 }
+
+section a {
+    margin-top: 1rem;
+    margin-right: 5rem;;
+    font-size:2.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}

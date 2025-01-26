@@ -18,46 +18,46 @@ body {
 }
 
 body section .videoCaption{
-    margin-left:7rem;
-    margin-right:24rem;
-    margin-top:5.5rem;
-    margin-bottom:5rem;
+    margin-left:5vw;
+    margin-right:24vw;
+    margin-top:7.5vh;
+    margin-bottom:5vh;
     width: 97vw;
-    gap: 7rem;
+    gap: 5vw;
     display: flex;
 }
 
 body section .picCaption{
-    margin-left:16rem;
-    margin-right:16rem;
-    margin-top:1.5rem;
+    margin-left:12vw;
+    margin-right:16vw;
+    margin-top:1.2vh;
     width: 97vw;
-    gap: 20rem;
+    gap: 12vw;
     display: flex;
 }
 body section .projectPicCaption{
-    margin-left:20rem;
-    margin-right:16rem;
-    margin-top:1.5rem;
+    margin-left:15vw;
+    margin-right:16vw;
+    margin-top:1.5vh;
     width: 97vw;
-    gap: 5.5rem;
+    gap: 5vw;
     text-align: left;
     display: flex;
 }
 
 section h5{
-    margin-top:0rem;
-    margin-bottom: 5rem; /* Space below the header */
-    height:0.5rem;
+    margin-top:0vh;
+    margin-bottom: 7vh; /* Space below the header */
+    height:0.5vh;
     font-size: 3.5rem;
     color: #2d4f55;
     text-align: left;
 }
 section h3{
 
-    margin-top:1.5rem;
-    margin-bottom: 6rem; /* Space below the header */
-    height:0.5rem;
+    margin-top:1.8vh;
+    margin-bottom: 9vh; /* Space below the header */
+    height:0.5vh;
     font-size: 3.5rem;
     color: #2d4f55;
     text-align: left;
@@ -65,8 +65,9 @@ section h3{
 
 body section p{
     
-    margin: 0rem;
-    width: 42rem;
+    margin: 0vw;
+    width: 30vw;
+    margin-bottom:1vh;
     font-size: 2.5rem;
     color: #000000;
     text-align: left;
@@ -82,26 +83,26 @@ body section .about{
 header {
     background: #3c6f76;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.2vh;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    margin: 0vw;
     font-size: 2.5rem;
 }
 
 header p {
-    margin: 0;
+    margin: 0vw;
     font-size: 1.2rem;
 }
 
 
 h6{
-    border-top: 0.1rem solid black;
-    border-bottom: 0.1rem solid black; 
-    margin-top:1.5rem;
-    margin-bottom:0.2rem;
+    border-top: 0.1vh solid black;
+    border-bottom: 0.1vh solid black; 
+    margin-top:1.7vh;
+    margin-bottom:0.2vh;
     font-size:3rem;
     
 }
@@ -110,13 +111,13 @@ nav {
     background: #444;
     color: #fff;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.3vw 0;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
+    margin:0.5vw;
     font-size: 1.3rem;
 }
 
@@ -125,7 +126,7 @@ nav a:hover {
 }
 
 section {
-    padding: 2rem;
+    padding: 3vh;
 }
 
 
@@ -137,10 +138,10 @@ section {
 
 .projectNav{
     background: #444;
-    margin-bottom:0rem;
-    margin-top:0rem;
+    margin-bottom:0vh;
+    margin-top:0vh;
     font-weight: bold;
-    height:2rem;
+    height:3vh;
 }
 /* Contact Links */
 section a {
@@ -154,25 +155,25 @@ section a:hover {
 
 li{
     right: 0; /* Starts from the right */
-    margin-left:15rem;
-    margin-right:5.5rem;
+    margin-left:11vw;
+    margin-right:5vw;
     text-align: left;
     font-size:1.8rem;
-    margin-bottom:3rem;
+    margin-bottom:5vh;
 
 }
 .list{
     margin-top:3rem;
     display:flex;
-    gap:1.2rem;
+    gap:1vw;
 
 
 }
 
 h2{
-    margin-top:0rem;
+    margin-top:0vh;
     font-size:3.0rem;
-    margin-left:15rem;
+    margin-left:11vw;
     text-align: left;
     color: #2d4f55;
 }
@@ -186,9 +187,9 @@ h4{
 
  .contact{
     
-    margin-left: 54rem;
-    margin-top: 3rem;
-    margin-right: 5rem;;
+    margin-left: 40vw;
+    margin-top: 4vh;
+    margin-right: 5vw;;
     font-size:2.5rem;
     text-decoration: none;
     

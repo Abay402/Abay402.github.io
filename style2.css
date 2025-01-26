@@ -1,6 +1,6 @@
 /* General Styles */
 html {
-    font-size: 16px; /* Base font size */
+    font-size: 13px; /* Base font size */
 }
 mark {
     background-color: rgba(0, 0, 0, 0) !important;
@@ -13,53 +13,53 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.4;
-    background-color: #77bc00;
+    background-color: #d5d5d5;
     text-align: center;
     color: #333;
 
 }
 
 body section .videoCaption{
-    margin-left:100px;
-    margin-right:350px;
-    margin-top:85px;
-    margin-bottom:75px;
-    width: 2000px;
+    margin-left:55px;
+    margin-right:150px;
+    margin-top:45px;
+    margin-bottom:35px;
+    width: 1400px;
     gap: 100px;
     display: flex;
 }
 
 body section .picCaption{
-    margin-left:250px;
-    margin-right:250px;
-    margin-top:25px;
-    width: 2000px;
-    gap: 320px;
+    margin-left:150px;
+    margin-right:150px;
+    margin-top:15px;
+    width: 1200px;
+    gap: 150px;
     display: flex;
 }
 body section .projectPicCaption{
-    margin-left:300px;
-    margin-right:250px;
-    margin-top:25px;
-    width: 1800px;
-    gap: 175px;
+    margin-left:190px;
+    margin-right:100px;
+    margin-top:15px;
+    width: 1300px;
+    gap: 150px;
     text-align: left;
     display: flex;
 }
 
 section h5{
-    margin-top:0px;
-    margin-bottom: 75px; /* Space below the header */
+    margin-top:10px;
+    margin-bottom: 55px; /* Space below the header */
     height:10px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #2d4f55;
     text-align: left;
 }
 section h3{
 
-    margin-top:25px;
-    margin-bottom: 105px; /* Space below the header */
-    height:10px;
+    margin-top:5px;
+    margin-bottom: 65px; /* Space below the header */
+    height:5px;
     font-size: 3.5rem;
     color: #2d4f55;
     text-align: left;
@@ -67,8 +67,8 @@ section h3{
 
 body section p{
     
-    margin: 110;
-    width: 700px;
+    margin: 50;
+    width: 600px;
     font-size: 2.5rem;
     color: #000000;
     text-align: left;
@@ -82,20 +82,20 @@ body section .about{
 }
 
 header {
-    background: #550000;
+    background: #3c6f76;
     color: #fff;
-    padding: 1.2vh;
+    padding: 0.5vh;
     text-align: center;
 }
 
 header h1 {
     margin: 0vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 header p {
     margin: 0vw;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -157,11 +157,11 @@ section a:hover {
 
 li{
     right: 0; /* Starts from the right */
-    margin-left:250px;
-    margin-right:75px;
+    margin-left:200px;
+    margin-right:155px;
     text-align: left;
-    font-size:1.8rem;
-    margin-bottom:55px;
+    font-size:1.5rem;
+    margin-bottom:35px;
 
 }
 .list{
@@ -173,10 +173,10 @@ li{
 
 h2{
     margin-top:0px;
-    font-size:3.0rem;
-    margin-left:250px;
+    font-size:2.0rem;
+    margin-left:176px;
     text-align: left;
-    color: #552d2d;
+    color: #2d4f55;
 }
 
 h4{
@@ -189,8 +189,8 @@ h4{
  .contact{
     
     
-    margin-left: 900px;
-    margin-top: 55px;
+    margin-left: 600px;
+    margin-top: 35px;
     margin-right: 5rem;;
     font-size:2.5rem;
     text-decoration: none;
@@ -199,14 +199,14 @@ h4{
 
 .contactLinks{
 
-    color: #834141;
+    color: #2d4f55;
     font-size:2.1rem;
 }
 
 section a {
-    margin-top: 1rem;
-    margin-right: 5rem;;
-    font-size:2.5rem;
+    margin-top: 0rem;
+
+    font-size:1.8rem;
     color: #ffffff;
     text-decoration: none;
 }

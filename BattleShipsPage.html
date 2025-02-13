@@ -24,18 +24,47 @@
 
     <section >
 
-        <div class="videoCaption">
-            
-            
-            <div>
-
-                <h5 class="headerDiv">2D Battleship Game</h5>
-    
-                <p>I made this project alongside two others for an AI course in Humber's Game Programming Program. The goal of this project was to learn and correctly implement steering, pathfinding, and decision making AI. I worked on the steering and decision making and I believe I implemented the AI correctly and effectively.</p>
+        <h3>2D Battleship Game</h3>
+        
+        <p id="about">
+            I worked on this project alongisde two others for an AI course in Humber's Game Programming Program. 
+            The goal of this project was to learn and correctly implement steering, pathfinding, 
+            and decision making AI. I worked on the steering and decision making AI behaviours.
                 
-            </div>
-            <iframe width="1152" height="780" src="https://www.youtube.com/embed/toqjFX8ul30" title="2D Battleships" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>  
+        </p>
+
+        <p id="about">
+            
+            The steering behaviours I chose to use for this project were Arrive and Align. 
+            The Arrive behaviour calculates the direction and distance between the AI and it's target
+            and then calculates the velocity based on that information. The AI then moves towards the target
+            and once it gets near the target radius, it will begin to slow down. The Align behaviour uses the position
+            of the target to calculate a new rotation and then applies that rotation to the AI's current rotation so that the 
+            AI rotates towards the target.
+
+        </p>
+
+        <p id="about">
+            The decision making behaviour I chose to implement in this project was a decision tree.
+            The decision tree has actions and decisions. Decisions are made when the AI needs to check for a condition.
+            Actions are executed based on the decision that the AI made. In this project the decision tree has simple logic.
+            When the AI spawns it makes a decision based on if the player is within aggro range of the AI. If so
+            it then makes another decision based on if the player is within attack range. If yes then the decision tree 
+            executes an action of attacking the player and if not then the decision tree executes an action of moving towards the player
+            using both the Align and Arrive steering behaviours. If the player is not within aggro range of the AI when the AI spawns
+            then the decision tree makes another decision based on if the AI is at an island. If yes then the decision
+            tree executes an action of attacking the island and if not then the decision tree executes an action of moving 
+            towards the island.
+         </p>
+
+         <p id="about">
+            I feel that I learned a lot of information on AI behaviour that I did not know before such as different techniques and practices.
+            
+         </p>
+
+
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/toqjFX8ul30" title="2D Battleships" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    
 
     </section>
 

@@ -106,7 +106,7 @@ h6 {
     justify-content: center;
     align-items: center;
     background-color: black; /* Just to visualize the container */
-    margin-left: 27%;
+    margin-left: 25%;
     margin-bottom: 3%;
     margin-top: 2%;
 }
@@ -121,7 +121,7 @@ h6 {
     text-wrap: wrap;
     width: 40%;
     margin-top: 1%;
-    margin-left: 32%;
+    margin-left: 31%;
     margin-bottom: 1.5%;
     font-size: 250%;
   }
@@ -200,3 +200,25 @@ footer img#github{
 #demos{
     margin-bottom: 5%;
 }
+
+
+h2{
+    text-align: left;
+    margin-top: 2.5%;
+    font-size: 240%;
+    color:#42919b;
+    margin-bottom: 1%;
+    width:20%;
+    margin-left: 31%;
+}
+
+
+#skillsAbout{
+    text-wrap: wrap;
+    width: 40%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    font-size: 225%;
+    margin-left: 31%;
+  }
+

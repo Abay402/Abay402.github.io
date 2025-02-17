@@ -197,9 +197,6 @@ footer img#github{
     gap:5%;
 }
 
-#demos{
-    margin-bottom: 5%;
-}
 
 
 h2{
@@ -222,3 +219,14 @@ h2{
     margin-left: 31%;
   }
 
+.projectImageContainer{
+
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    margin-left: 26%;
+    margin-bottom: 11%;
+    margin-top: 3%;
+
+}

@@ -23,18 +23,48 @@
 
     <section >
 
-        <div class="videoCaption">
-            
-            <iframe width="1152" height="780" src="https://www.youtube.com/embed/Y0KIKGVuhYU" title="Zombie Game Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div>
-
-                <h5 class="headerDiv">2D Zombie Horde Game</h5>
-    
-                <p>I made this project alongside three others for my Midstone project for Humber's Game Programming Program. The goal of this project was to learn and use a SDL framework and learn how to work within a team. I worked on the player movement, the projectile system and the power up system.</p>
-                
-            </div>
+        <h3>2D Zombie Horde Game</h3>
         
-        </div>
+        <p id="about">
+            I worked on this project alongisde three others for my Midstone project for Humber's Game Programming Program. 
+            The goal of this project was to create a working demo whilst learning how to work and communicate within a team. 
+            We were given the restriction of using a C++ SDL framework as our engine for our game. 
+                
+        </p>
+
+        <p id="about">
+            
+            The main thing that I worked on was the player movement and player rotation. I wanted the player to rotate towards the mouse at all times so I implemented a system where the mouse cursors x and y position
+            would be tracked and it would be used to calculate the players rotation.
+
+        </p>
+
+        <p id="about">
+            I also worked on the enemy spawning system. With the limited knowledge of SDL it was harder to implement this system in a dynamic way so I instead created a workaround. I set up over a dozen spawn locations that the enemy could
+            spawn in and I put those locations into an array. Every time an enemy spawned after a set amount of time, the spawner class would randomly choose a location from this array and spawn that enemy at that location.
+            I also improved this logic and made it so an enemy wouldn't spawn in the same location twice in a row.
+         </p>
+
+         <p id="about">
+            I worked on the gun mechanics as well. I made it so when the player pressed the fire button a bullet was spawned and given the direction of where the gun was pointed at. I used a similar spawning system for the bullet as 
+            I used for the enemies except the position was calculated based on the guns location. I also implemented logic for the gun to rotate in the same direction as the player and for the bullet to follow the guns rotation when it is spawned.
+
+            
+         </p>
+
+         <p id="about">
+            The last major system I worked on was the item drop system. The inspiration I had for this system was the drops system from Call Of Duty Zombies. I designed this system to have a random chance of dropping an item
+            any time an enemy is killed. Then if an item is dropped it randomly selects from the list of items that are in the game. 
+            
+         </p>
+
+         <p id="about">
+            This project provided great experience on how to work within a team and how to communciate between different roles when making a game.
+            
+         </p>
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/Y0KIKGVuhYU" title="Zombie Game Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    
+
 
     </section>
 

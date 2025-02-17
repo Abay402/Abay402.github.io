@@ -1,0 +1,84 @@
+<!-- Projects Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Abayjit Sidhu</h1>
+        <p>Game Developer | Programmer | Designer</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html"><mark>Projects</mark></a>
+        <a href="skills.html">Skills</a>
+
+    </nav>
+
+    <section >
+
+        
+        <h3>Zombie Baby Factory</h3>
+        
+        <p id="about">
+            
+            I worked on this project alongisde 13 others for a class at Humber's Game Programming Program. The goal of this project was to learn how to work amongst a big group and focus 
+            on one cohesive idea and develop it. We chose to make a farming game with a Zombie theme in Unreal Engine 5 but were unfortunately not able to complete everything due to time issues. I was 1 of 3
+            programmers that worked on this project.
+
+        </p>
+
+        <p id="about">
+            We originally were suppose to have 15 weeks for this project but because of scheduling issues from the school we only had 7. As 1 of 3 programmers that worked on the project I spent the first couple of weeks
+            working on the customer AI. I succesfully created a queue system where a customer would spawn in and check if any counter was available and would then move to it if there was. If not then they would wait in line until there was 
+            one available. The customer when arriving to a counter would then give an order of zombie parts that they wanted. A timer would then start and if the player did not get an item to the customer in time then the customer would leave
+            and score would be deducted. If the player did give the customer their item in time then the customer would check if it was the correct item, if yes then the customer leaves happy and score goes up. If the item was not correct 
+            then the customer leaves angry and the score is deducted.
+        </p>
+
+        <p id="about">
+            After I finished the customer AI system I had to then work on the Incubator system which is used to create the zombie parts, and the Combination system which is used to combine the parts together. I was given these tasks
+            by the project leads after some problems came up with other programmers on the project. The incubator system was easier to implement then the combination system. For the incubator we already had a rough UI system set up for it.
+            I then improved the system by making it so that when the player picks a part in the UI, the machine goes into incubation mode and after a couple of seconds it spawns a zombie part that the player can pick up. 
+            I also fixed all bugs the incubator had with 
+            it's animations. For the combination system, I made it so when the player activated it, it would take all of the player's zombie parts in their inventory and add it to the machine.
+            Then the machine would activate and after a couple of seconds it would spawn a zombie with all of the parts that were added to it. I wanted this system to be fun and unique instead of bland and boring
+            so after discussing with the project leads we decided to change it so that the zombie limbs would be randomaly placed on each socket of the body. This allowed for some funny moments where
+            the finished zombie body would have it's head where it's feet usually would be or have it's arm where it's head usually would be. I made this system by renaming the sockets on the body mesh to numbers. This way I could
+            randomly generate an integer within a range and then convert the integer to a string and match it with a socket on the body.
+         </p>
+
+         <p id="about">
+            For the last week I was one of the few people still working on the project. I fixed mostly every bug that we had not fixed yet. I also added a trash bin object that the player could use to clear their inventory of 
+            unwanted items. I also implemented a cool system where when the player is selling a baby zombie to the customer, that baby zombie appears on the counter for a couple seconds before it's sold. I also made it so 
+            the baby zombie appears on the counter exactly how it did when it came out of the combination machine.
+    
+         </p>
+
+         <p id="about">
+            The main thing I took away from this project is that when working in a big group plans will often change. I learned that it is important to be flexible and be able to work on other tasks if required. This project also made
+            me rethink how I view finished projects. I'm now way more strict on what is acceptable as I have a lot of pride on making sure that my work is efficient and bug free. I learned a lot about Unreal Engine during this project
+            and I feel like I code much more effectively in Unreal now then before this project. Lastly, I learned a lot on how to work within different teams and work towards one main goal as a team.
+            
+         </p>
+
+
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/N1OH-yS7aTM" title="Sky City Fugitive Demo Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </section>
+
+    <footer>
+
+        <a href="https://www.linkedin.com/in/abayjit-sidhu-467640208/" target="_blank"><img class="shrink" src="In-White-21@2x.png"> </a>
+        <a href="https://github.com/Abay402?tab=repositories" target="_blank"><img class="shrink" id="github" src="GitHub_Logo_White.png"></a>
+        <a href="mailto:abayssidhu@outlook.com" target="_blank"><img class="shrink" src="email_15477986.png"></a>
+
+    </footer>
+</body>
+</html>

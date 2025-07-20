@@ -68,6 +68,16 @@ nav a {
     font-size: 175%;
 }
 
+p a {
+    color: #fff;
+    text-decoration: none;
+    margin:0.35%;
+    font-size: 175%;
+}
+a:hover {
+    color: #4ca8b4;
+}
+
 nav a:hover {
     color: #4ca8b4;
 }

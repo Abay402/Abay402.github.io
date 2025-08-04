@@ -1,18 +1,14 @@
 /* General Styles */
 
-@font-face {
-    font-family: 'Valty';
-    src: url('valty-demo.bold-italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
     font-size: 62.5%; 
 }
 mark {
     background-color: rgba(0, 0, 0, 0) !important;
-    color:#42919b !important;
+    color:#ffffff !important;
+    font-weight: bold;
 }
 
 * {
@@ -25,13 +21,13 @@ mark {
 
 }
 body{
-     font-family: "Valty", serif;
-    background-color: #2e2e2e;
-    color:rgb(195, 195, 195);
+    font-family: 'Montserrat', sans-serif;
+    background-color: #363636;
+
 }
 
 footer {
-    background: #000000;
+    background-color: #232323;
     color: #fff;
     padding: 0.5%;
     padding-top: 0.75%;
@@ -39,8 +35,8 @@ footer {
 }
 
 header {
-    background: #000000;
-    color: #fff;
+    background-color: #232323;
+    color: #d9d9d9;
     padding: 0.5%;
     text-align: center;
 }
@@ -56,14 +52,14 @@ header p {
 }
 
 nav {
-    background: #323232;
+    background-color: #232323;
     color: #fff;
     text-align: center;
     padding: 0.25%;
 }
 
 nav a {
-    color: #fff;
+    color: #d9d9d9;
     text-decoration: none;
     margin:0.35%;
     font-size: 175%;
@@ -75,12 +71,9 @@ p a {
     margin:0.35%;
     font-size: 175%;
 }
-a:hover {
-    color: #4ca8b4;
-}
 
 nav a:hover {
-    color: #4ca8b4;
+    color: #c7c7c7b8;
 }
 
 #circle {
@@ -91,14 +84,20 @@ h3 {
     margin-top: 1.5%;
     font-size: 300%;
     text-align: center;
-    color:#42919b;
+    color:#ffffff;
 }
 
 h6 {
-    text-align: center;
-    font-size: 500%;
-    margin-top: 1.5%;
-    color:#ffffff;
+    background-color: #000000;
+    text-align:center;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 375%;
+    font-weight: 600;
+    letter-spacing: 255%;
+    margin:0;
+    padding: 1% 2%;
+    text-transform: uppercase;
 }
 
 .image-container {
@@ -142,6 +141,7 @@ h6 {
     margin-left: 31%;
     margin-bottom: 1.5%;
     font-size: 250%;
+        color: #d9d9d9;
   }
 
   footer img{
@@ -173,7 +173,6 @@ footer img#github{
 .button-container {
     background-color: #000000;
     display:inline-block;
-    font-family:Arial, Helvetica, sans-serif !important;
     margin:1%;
     max-width: 25%;
     min-width: 20%;
@@ -204,7 +203,17 @@ footer img#github{
     text-transform: uppercase;
 }
 
-
+.button-container h1{
+    background-color: #000000;
+    border: 1.5px solid #fff;
+    color: #fff;
+    font-size: 175%;
+    font-weight: 600;
+    letter-spacing: 255%;
+    margin:0;
+    padding: 1.25% 4%;
+    text-transform: uppercase;
+}
 
 
 .button-container::before,
@@ -281,7 +290,7 @@ h2{
     text-align: left;
     margin-top: 1.5%;
     font-size: 275%;
-    color:#42919b;
+    color:#ffffff;
     width:20%;
     margin-left: 31%;
 }
@@ -325,4 +334,13 @@ h2{
     -webkit-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+}
+
+.button-container:hover h1,
+.button-container.hover h1{
+    opacity: 0;
+}
+
+p{
+    color:#d9d9d9;
 }

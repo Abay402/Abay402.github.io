@@ -101,12 +101,12 @@ h6 {
 }
 
 .image-container {
+    margin-left: 5%;
+    margin-top: 5%;
     max-width: 100%;
-    width: 20%;
-    height: 20%;
+    width: 110%;
+    height: 30%;
     overflow: hidden;
-    margin-left: 41%;
-    margin-bottom: 5%;
   }
  #projectImage {
     max-width: 100%;
@@ -135,7 +135,7 @@ h6 {
 }
   
   #about{
-    text-wrap: wrap;
+      text-wrap: wrap;
     width: 40%;
     margin-top: 1%;
     margin-left: 31%;
@@ -288,21 +288,24 @@ footer img#github{
 
 h2{
     text-align: left;
-    margin-top: 1.5%;
-    font-size: 275%;
-    color:#ffffff;
-    width:20%;
-    margin-left: 31%;
+    margin-top: 8.5%;
+    font-size: 175%;
+    color:#353535;
+    width:100%;
+    margin-left: 20%;
+        margin-bottom: 2.5%;
+    font-weight: bold;
 }
 
 
 #skillsAbout{
     text-wrap: wrap;
-    width: 40%;
+    width: 75%;
     margin-top: 1%;
     margin-bottom: 1.5%;
-    font-size: 250%;
-    margin-left: 31%;
+    font-size: 150%;
+    margin-left: 20%;
+    color:#353535;
   }
 
 .projectImageContainer{
@@ -343,4 +346,58 @@ h2{
 
 p{
     color:#d9d9d9;
+}
+
+div #about{
+
+}
+#aboutDiv{
+    background-color: #d9d9d9;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-top:1%;
+    margin-bottom:3%;
+
+}
+#aboutSubDiv{
+    gap:10%;
+    text-align: left;
+    display: flex;
+ 
+}
+#aboutTextDiv{
+    margin-top:2%;
+
+    width: 80%;
+    text-align: left;
+}
+#aboutSkillsDiv{
+
+}
+
+#aboutDownloadDiv{
+    margin-top:15%;
+    margin-bottom: 5%;
+}
+
+#aboutDownloadBox{
+
+    background-color: #d9d9d9;
+    border: 1.5px solid #000000;
+    color: #000000;
+    font-size: 225%;
+    font-weight: 600;
+    letter-spacing: 255%;
+    margin:0;
+    padding: 3.25% 4%;
+    text-transform: uppercase;
+    width:45%;
+}
+#aboutText{
+        text-wrap: wrap;
+    width: 90%;
+    margin-top: 5%;
+    font-size:175%;
+    color:#353535;
+        font-weight: bold;
 }

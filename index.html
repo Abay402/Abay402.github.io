@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/jarallax.css">
     <link rel="stylesheet" href="style.css">
+
+
+
     <script src="js/main.js"></script>
 </head>
-<body>
+<body class="jarallax">
     <header>
         <h1>Abayjit Sidhu</h1>
         <p>Game Developer | Programmer | Designer</p>
@@ -19,26 +23,45 @@
         <a href="projects.html">Projects</a>
     </nav>
     <section>
-
-        <h3 class="headerDiv">Hello There!</h3>
-        <p id="about">
-            My name is Abayjit Sidhu and I'm a game developer that enjoys making fun and unique games. 
-            I believe that passion towards games will always lead to success and I try to imbue each game I make with as much passion as possible. 
-            My main goal is to help push the industry into a better direction by creating innovative experiences.
-            Have a look at my past work and experiences!!</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/0EFoyIIjBj8" title="PortfolioHome" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
         
+        <h3 id="homeHeader">Hello There!</h3>
+        <p id="homeAbout">
+            My name is Abayjit Sidhu, and I'm a game developer who loves creating fun and unique experiences.
+            I believe that genuine passion for games is the key to success, and I strive to bring that passion into every project I work on.
 
+         </p>
+
+  
+            <div id="homeDiv">
+              <a href="https://www.youtube.com/watch?v=0EFoyIIjBj8&ab_channel=AbaySidhu"target="_blank">       
+                  <h5 id="text-box">Demo Reel</h5>
+              </a>
+              <a href="projects.html">       
+                  <h5 id="text-box">Projects</h5>
+              </a>
+            </div>
+      
+   
     </section>  
-
-    <footer>
+    <footer id="home">
 
         <a href="https://www.linkedin.com/in/abayjit-sidhu-467640208/" target="_blank"><img class="shrink" src="In-White-21@2x.png"> </a>
         <a href="https://github.com/Abay402?tab=repositories" target="_blank"><img class="shrink" id="github" src="GitHub_Logo_White.png"></a>
         <a href="mailto:abayssidhu@outlook.com" target="_blank"><img class="shrink" src="email_15477986.png"></a>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    
+    <script src="js/jarallax.min.js"> </script>
+    <script src="js/jarallax-video.min.js"> </script>
+    <script type="text/javascript">
+        $('.jarallax').jarallax({
+            speed:0.2,
+            videoSrc: 'https://www.youtube.com/watch?v=0EFoyIIjBj8&ab_channel=AbaySidhu'
+            
+        });
+    </script>
+    
 </body>
+
 </html>

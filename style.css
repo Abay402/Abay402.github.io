@@ -25,6 +25,10 @@ body{
     background-color: #363636;
 
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 footer {
     background-color: #232323;
@@ -32,13 +36,22 @@ footer {
     padding: 0.5%;
     padding-top: 0.75%;
     text-align: center;
-}
 
+}
+#home {
+    background-color: #232323;
+    color: #fff;
+    padding: 0.5%;
+    padding-top: 0.75%;
+    text-align: center;
+    transform: translate(0%,500%);
+}
 header {
     background-color: #232323;
     color: #d9d9d9;
     padding: 0.5%;
     text-align: center;
+
 }
 
 header h1 {
@@ -76,6 +89,19 @@ nav a:hover {
     color: #c7c7c7b8;
 }
 
+#homeHeader{
+    margin-top: 12%;
+    margin-bottom: .5%;
+    font-size: 500%;
+    font-weight: bold;
+    text-align: center;
+    color:#ffffff;
+        text-shadow:
+      -1px -1px 0 rgb(0, 0, 0),
+       1px -1px 0 rgb(0, 0, 0),
+      -1px  1px 0 rgb(0, 0, 0),
+       1px  1px 0 rgb(0, 0, 0);
+}
 #circle {
     border-radius: 50%;
 }
@@ -142,15 +168,30 @@ h6 {
     margin-bottom: 1.5%;
     font-size: 250%;
         color: #d9d9d9;
+  }  
+  #homeAbout{
+    text-wrap: wrap;
+    text-align:center;
+    width: 80%;
+    margin-bottom: 2.5%;
+    font-size: 200%;
+    color: #d9d9d9;
+    transform: translate(14%,0%);
+    text-shadow:
+      -1px -1px 0 rgb(0, 0, 0),
+       1px -1px 0 rgb(0, 0, 0),
+      -1px  1px 0 rgb(0, 0, 0),
+       1px  1px 0 rgb(0, 0, 0);
   }
-
   footer img{
     width:2.5%;
     height:2.5%;
     margin-right:2%;
     margin-left:2%;
   }
-
+.jarallax{
+    background-color: #232323;
+}
 footer img#github{
 
 
@@ -348,6 +389,11 @@ p{
     color:#d9d9d9;
 }
 
+#space{
+    font-size:1vh;
+    transform: translate(50%, -50%);
+}
+
 div #about{
 
 }
@@ -400,4 +446,27 @@ div #about{
     font-size:175%;
     color:#353535;
         font-weight: bold;
+}
+
+#homeDiv{
+    display:flex;
+    gap:15%;
+    justify-content: center;
+    align-items: center;
+    margin-right:2%;
+}
+
+h5{
+    font-size: 250%;
+    text-align: center;
+}
+a{
+      text-decoration: none; 
+}
+#text-box {
+    background-color: #000000;
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+    padding:10% 10%;
+    width:115%;
 }

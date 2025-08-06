@@ -114,8 +114,8 @@ nav a:hover {
 }
 
 h3 {
-    margin-top: 1.5%;
-    font-size: 300%;
+    margin-top: 38.5%;
+    font-size: 150%;
     text-align: center;
     color:#ffffff;
 }
@@ -135,8 +135,8 @@ h6 {
 
 .image-container {
     margin-left: 5%;
-    margin-top: 5%;
-    max-width: 100%;
+    margin-top: 15%;
+    max-width: 150%;
     width: 110%;
     height: 30%;
     overflow: hidden;
@@ -337,7 +337,7 @@ footer img#github{
 h2{
     text-align: left;
     margin-top: 8.5%;
-    font-size: 175%;
+    font-size: 125%;
     color:#353535;
     width:100%;
     margin-left: 20%;
@@ -351,7 +351,7 @@ h2{
     width: 75%;
     margin-top: 1%;
     margin-bottom: 1.5%;
-    font-size: 150%;
+    font-size: 85%;
     margin-left: 20%;
     color:#353535;
   }
@@ -406,22 +406,21 @@ div #about{
 }
 #aboutDiv{
     background-color: #d9d9d9;
-    margin-left:25%;
-    margin-right: 25%;
+    margin-left:5%;
+    margin-right: 5%;
     margin-top:1%;
     margin-bottom:3%;
-
+    padding-bottom:15%;
 }
 #aboutSubDiv{
-    gap:10%;
+    gap:15%;
     text-align: left;
     display: flex;
  
 }
 #aboutTextDiv{
     margin-top:2%;
-
-    width: 80%;
+    width: 180%;
     text-align: left;
 }
 #aboutSkillsDiv{
@@ -438,19 +437,19 @@ div #about{
     background-color: #d9d9d9;
     border: 1.5px solid #000000;
     color: #000000;
-    font-size: 225%;
+    font-size: 100%;
     font-weight: 600;
     letter-spacing: 255%;
     margin:0;
     padding: 3.25% 4%;
     text-transform: uppercase;
-    width:45%;
+    width:75%;
 }
 #aboutText{
-        text-wrap: wrap;
+    text-wrap: wrap;
     width: 90%;
     margin-top: 5%;
-    font-size:175%;
+    font-size:75%;
     color:#353535;
         font-weight: bold;
 }

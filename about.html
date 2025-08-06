@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="main-style" rel="stylesheet" href="style.css">
+    <script>
+        if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    
+            document.getElementById('main-style').setAttribute('href', 'mobile.css');
+        }
+    </script>
     
     <script src="js/main.js"></script>
 </head>

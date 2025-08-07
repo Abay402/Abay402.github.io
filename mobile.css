@@ -113,7 +113,7 @@ nav a:hover {
 }
 
 h3 {
-    margin-top: 38.5%;
+    margin-top: 20.5%;
     font-size: 150%;
     text-align: center;
     color:#ffffff;
@@ -124,7 +124,7 @@ h6 {
     text-align:center;
     border: 1px solid #fff;
     color: #fff;
-    font-size: 375%;
+    font-size: 125%;
     font-weight: 600;
     letter-spacing: 255%;
     margin:0;
@@ -134,7 +134,7 @@ h6 {
 
 .image-container {
     margin-left: 5%;
-    margin-top: 15%;
+    margin-top: 25%;
     max-width: 150%;
     width: 110%;
     height: 30%;
@@ -241,7 +241,7 @@ footer img#github{
     background-color: #000000;
     border: 2px solid #fff;
     color: #fff;
-    font-size: 275%;
+    font-size: 75%;
     font-weight: 600;
     letter-spacing: 255%;
     margin:0;
@@ -253,7 +253,7 @@ footer img#github{
     background-color: #000000;
     border: 1.5px solid #fff;
     color: #fff;
-    font-size: 175%;
+    font-size: 75%;
     font-weight: 600;
     letter-spacing: 255%;
     margin:0;
@@ -334,12 +334,12 @@ footer img#github{
 
 h2{
     text-align: left;
-    margin-top: 8.5%;
+    margin-top: 15.5%;
     font-size: 125%;
     color:#353535;
     width:100%;
     margin-left: 20%;
-        margin-bottom: 2.5%;
+        margin-bottom: 4.5%;
     font-weight: bold;
 }
 
@@ -406,9 +406,9 @@ div #about{
     background-color: #d9d9d9;
     margin-left:5%;
     margin-right: 5%;
-    margin-top:1%;
+    margin-top:5%;
     margin-bottom:3%;
-    padding-bottom:15%;
+    padding-bottom:10%;
 }
 #aboutSubDiv{
     gap:15%;
@@ -417,7 +417,7 @@ div #about{
  
 }
 #aboutTextDiv{
-    margin-top:2%;
+    margin-top:10%;
     width: 180%;
     text-align: left;
 }
@@ -426,7 +426,7 @@ div #about{
 }
 
 #aboutDownloadDiv{
-    margin-top:15%;
+    margin-top:20%;
     margin-bottom: 5%;
 }
 
@@ -447,7 +447,7 @@ div #about{
     text-wrap: wrap;
     width: 90%;
     margin-top: 5%;
-    font-size:75%;
+    font-size:85%;
     color:#353535;
         font-weight: bold;
 }

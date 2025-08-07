@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link id="main-style" rel="stylesheet" href="mobile.css">
+    <link id="main-style" rel="stylesheet" href="style.css">
     <script>
         if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     
@@ -31,35 +31,63 @@
 
         
         <h3>Sky City Fugitive</h3>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/UY0LgXzlK20?autoplay=1&mute=1" allow="autoplay"  title="ZombieHorde" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="buildDiv">
         
-            
+             <a href="https://drive.google.com/file/d/1cTCWp2A2T6d4OzGMAE6VyAStQT5fDskt/view?usp=sharing" target="_blank"> <h5 id="text-box"> Playable Build</h5></a>
+        </div>
+        <h4>
+            Software Utilized
+        </h4>
         <p id="about">
-            Sky City Fugitive is a prototype that I made on my own for my Capstone project for Humber's Game Programming Program. The goal of this demo is to showcase the three main systems; the dialogue system, the soulslike respawning system, and the event system. I made this project in Unreal Engine 5 despite it being a 2D game because I wanted to challenge myself and to learn how to do it effectively. 
-            I also made all of the character art in the game including the animations.
+            Unreal Engine, Aseprite, C++ and Blueprint
+        </p>
+        <h4>
+            Role
+        </h4>
+        <p id="about">
+            Programmer / Designer / UI Artist, Level Designer, Art Designer    
+        </p>
+
+        <h4>
+            Goal Of Project
+        </h4>
+
+        <p id="about">
+            The goal of this demo is to showcase the three main systems; the dialogue system, the soulslike respawning system, and the event system. 
+            I also wanted to challenge myself with the art so I made all of the character art in the game including the animations.
                 
         </p>
 
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/UY0LgXzlK20" title="SkyCity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <h4>
+            Personal Reflection
+        </h4>
 
         <p id="about">
-        
-            <a href="https://drive.google.com/file/d/1cTCWp2A2T6d4OzGMAE6VyAStQT5fDskt/view?usp=sharing" target="_blank">Playable Build</a>
-       </p>
+            Sky City Fugitive is a prototype that I made on my own for my Capstone project for Humber's Game Programming Program. 
+            I worked on this project for 12 weeks with the goal in mind to learn how to create many different systems and incorporate them into a prototype.
+            I challenged myself by creating the project in UE5 despite it being a 2D game and I'm glad I did because I learned different tools and tricks that I didn't know before.
+        </p>
 
+        <h4>
+            Dialogue
+        </h4>
         <p id="about">
-           I made the dialogue component that reads and parses an XML file that has dialogue string data in it.
+            
+            I made the dialogue component that reads and parses an XML file that has dialogue string data in it.
            The component also calculates the responses that should be available to the player based on the dialogue that the NPC said and it also
            calculates the dialogue that should be played next based on the response the player chooses.
            This dialogue component was created in C++ and communciates with blueprint code perfectly. 
            This system is also able to trigger events during dialogue if necessary.
-        </p>
 
-        <img id="projectImage" src="DialogueBegin.png" alt="Project 1 Screenshot" width="550" height="900">
-        <img id="projectImage" src="DialogueEnd.png" alt="Project 1 Screenshot" width="550" height="900">
-        <img id="projectImage" src="LoadDiaogue.png" alt="Project 1 Screenshot" width="550" height="900">
-        <img id="projectImage" src="DialogueScript.png" alt="Project 1 Screenshot" width="550" height="900">
+        </p>
+        
+        <h4>
+            Respawning
+        </h4>
 
         <p id="about">
             The respawn system I made for this project is similar to the respawn system that can be found in other soulslikes.
@@ -71,10 +99,11 @@
             On death, the individual enemy accesses this map and updates it so the map knows it is dead. Every time a level is created
             the enemies will check the map and see whether they should be dead and if so, they are instantly deleted.
             When the player uses a "Recharge Station" the map sets each entry to false so that the enemies can respawn.
-
-                 
          </p>
 
+         <h4>
+            Events
+        </h4>
          <p id="about">
             I also created an event manager for this project. This event manager also exists within the game instance
             and any class can subscribe to an event at any time. When a class is subscribed to an event, a function from that class is given to the event manager.
@@ -82,13 +111,13 @@
             class that is subscribed to that event will execute the function it subscribed with.
          </p>
 
-         <img id="projectImage" src="EventManager.png" alt="Project 1 Screenshot" width="550" height="900">
 
-         <p id="about">
-            I worked on this project for 12 weeks with the goal in mind to learn how to create many different systems and incorporate them into a prototype.
-            I challenged myself by creating the project in UE5 despite it being a 2D game and I'm glad I did because I learned different tools and tricks that I didn't know before.
-            
-         </p>
+
+        <img id="projectImage" src="DialogueBegin.png" alt="Project 1 Screenshot" width="550" height="900">
+        <img id="projectImage" src="DialogueEnd.png" alt="Project 1 Screenshot" width="550" height="900">
+        <img id="projectImage" src="LoadDiaogue.png" alt="Project 1 Screenshot" width="550" height="900">
+        <img id="projectImage" src="DialogueScript.png" alt="Project 1 Screenshot" width="550" height="900">
+         <img id="projectImage" src="EventManager.png" alt="Project 1 Screenshot" width="550" height="900">
 
     </section>
 

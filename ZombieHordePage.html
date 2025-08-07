@@ -30,52 +30,85 @@
 
         <h3>2D Zombie Horde Game</h3>
         
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/BHV95-cx4FQ?autoplay=1&mute=1" allow="autoplay"  title="ZombieHorde" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="buildDiv">
+        
+             <a href="https://drive.google.com/file/d/1mTAdTZCwcWQr--OErymlVuLOCq-jaD2J/view?usp=sharing" target="_blank"> <h5 id="text-box"> Playable Build</h5></a>
+        </div>
+        <h4>
+            Software Utilized
+        </h4>
         <p id="about">
-            I worked on this project alongisde three others for my Midstone project for Humber's Game Programming Program. 
+            SDL Framework in C++
+        </p>
+        <h4>
+            Role
+        </h4>
+        <p id="about">
+            Programmer / Designer    
+        </p>
+
+        <h4>
+            Goal Of Project
+        </h4>
+
+        <p id="about">
             The goal of this project was to create a working demo whilst learning how to work and communicate within a team. 
             We were given the restriction of using a C++ SDL framework as our engine for our game. 
                 
         </p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/BHV95-cx4FQ" title="ZombieHorde" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+
+        <h4>
+            Personal Reflection
+        </h4>
+
         <p id="about">
-        
-             <a href="https://drive.google.com/file/d/1mTAdTZCwcWQr--OErymlVuLOCq-jaD2J/view?usp=sharing" target="_blank">Playable Build</a>
+            I worked on this project alongisde three others for my Midstone project for Humber's Game Programming Program. The main
+            systems I worked on was the player movement and rotation, the enemy spawning system, the projectile system as well as the item drop system.
+            This project provided great experience on how to work within a team and how to communciate between different roles when making a game.
         </p>
-  
+
+        <h4>
+            Player Movement and Rotation
+        </h4>
         <p id="about">
             
-            The main thing that I worked on was the player movement and player rotation. I wanted the player to rotate towards the mouse at all times so I implemented a system where the mouse cursors x and y position
+            I wanted the player to rotate towards the mouse at all times so I implemented a system where the mouse cursors x and y position
             would be tracked and it would be used to calculate the players rotation.
 
         </p>
+        
+        <h4>
+            Enemy Spawning
+        </h4>
 
         <p id="about">
-            I also worked on the enemy spawning system. With the limited knowledge of SDL it was harder to implement this system in a dynamic way so I instead created a workaround. I set up over a dozen spawn locations that the enemy could
+            With the limited knowledge of SDL it was harder to implement this system in a dynamic way so I instead created a workaround. I set up over a dozen spawn locations that the enemy could
             spawn in and I put those locations into an array. Every time an enemy spawned after a set amount of time, the spawner class would randomly choose a location from this array and spawn that enemy at that location.
             I also improved this logic and made it so an enemy wouldn't spawn in the same location twice in a row.
          </p>
 
+         <h4>
+            Guns and Projectiles
+        </h4>
          <p id="about">
-            I worked on the gun mechanics as well. I made it so when the player pressed the fire button a bullet was spawned and given the direction of where the gun was pointed at. I used a similar spawning system for the bullet as 
+            I made it so when the player pressed the fire button a bullet was spawned and given the direction of where the gun was pointed at. I used a similar spawning system for the bullet as 
             I used for the enemies except the position was calculated based on the guns location. I also implemented logic for the gun to rotate in the same direction as the player and for the bullet to follow the guns rotation when it is spawned.
+         </p>
+        <h4>
+            Item Drops
+        </h4>
 
+         <p id="about">
+            The inspiration I had for this system was the drops system from Call Of Duty Zombies. I designed this system to have a random chance of dropping an item
+            any time an enemy is killed. Then if an item is dropped it randomly selects from the list of items that are in the game. 
             
          </p>
          <img id="projectImage" src="shoot.png" alt="Project 1 Screenshot" width="550" height="900">
 
-         <p id="about">
-            The last major system I worked on was the item drop system. The inspiration I had for this system was the drops system from Call Of Duty Zombies. I designed this system to have a random chance of dropping an item
-            any time an enemy is killed. Then if an item is dropped it randomly selects from the list of items that are in the game. 
-            
-         </p>
          <img id="projectImage" src="ItemDrops.png" alt="Project 1 Screenshot" width="550" height="900">
-         <p id="about">
-            This project provided great experience on how to work within a team and how to communciate between different roles when making a game.
-            
-         </p>
-
 
     </section>
 

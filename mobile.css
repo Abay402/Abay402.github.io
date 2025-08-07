@@ -149,13 +149,13 @@ h6 {
     margin-top: 1%;
   }
   .video-container {
-    width: 75%;  /* Set the container width as a percentage of the viewport */
-    height: 15vh; /* Set the height relative to the viewport height */
+    width: 90%;  /* Set the container width as a percentage of the viewport */
+    height: 30vh; /* Set the height relative to the viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black; /* Just to visualize the container */
-    transform:translate(14%,0%);
+    transform:translate(6%,0%);
     margin-bottom: 1.5%;
     margin-top: 1%;
 }

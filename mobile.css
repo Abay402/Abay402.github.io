@@ -124,7 +124,7 @@ h6 {
     text-align:center;
     border: 1px solid #fff;
     color: #fff;
-    font-size: 125%;
+    font-size: 150%;
     font-weight: 600;
     letter-spacing: 255%;
     margin:0;
@@ -220,7 +220,7 @@ footer img#github{
     background-color: #000000;
     display:inline-block;
     margin:1%;
-    max-width: 25%;
+    max-width: 40%;
     min-width: 20%;
     overflow:hidden;
     position:relative;
@@ -241,7 +241,7 @@ footer img#github{
     background-color: #000000;
     border: 2px solid #fff;
     color: #fff;
-    font-size: 75%;
+    font-size: 125%;
     font-weight: 600;
     letter-spacing: 255%;
     margin:0;
@@ -253,7 +253,7 @@ footer img#github{
     background-color: #000000;
     border: 1.5px solid #fff;
     color: #fff;
-    font-size: 75%;
+    font-size: 125%;
     font-weight: 600;
     letter-spacing: 255%;
     margin:0;
@@ -322,7 +322,7 @@ footer img#github{
 }
 
 #projectDiv{
-    margin-top:1%;
+    margin-top:4%;
     margin-bottom: 1%;
     display: flex;
     justify-content: center; /* Centers horizontally */

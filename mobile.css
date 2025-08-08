@@ -490,3 +490,12 @@ h4{
     margin-left:11%;
     margin-right:2%;
 }
+  .modelImageContainer {
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom:2%;
+    max-width: 100%;
+    width: 75%;
+    height: 50%;
+    overflow: hidden;
+  }

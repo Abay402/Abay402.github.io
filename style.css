@@ -135,6 +135,17 @@ h6 {
     height: 30%;
     overflow: hidden;
   }
+
+  .modelImageContainer {
+    margin-left: 35%;
+    margin-top: 2%;
+    margin-bottom:2%;
+    max-width: 100%;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+  }
+
  #projectImage {
     max-width: 100%;
     width: 50%;

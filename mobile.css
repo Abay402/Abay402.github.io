@@ -134,10 +134,10 @@ h6 {
 
 .image-container {
     margin-left: 5%;
-    margin-top: 25%;
+    margin-top: 20%;
     max-width: 150%;
-    width: 110%;
-    height: 30%;
+    width: 90%;
+    height: 27%;
     overflow: hidden;
   }
  #projectImage {
@@ -338,7 +338,7 @@ h2{
     font-size: 125%;
     color:#353535;
     width:100%;
-    margin-left: 20%;
+    margin-left: 15%;
         margin-bottom: 4.5%;
     font-weight: bold;
 }
@@ -350,7 +350,7 @@ h2{
     margin-top: 1%;
     margin-bottom: 1.5%;
     font-size: 85%;
-    margin-left: 20%;
+    margin-left: 15%;
     color:#353535;
   }
 
@@ -411,7 +411,7 @@ div #about{
     padding-bottom:10%;
 }
 #aboutSubDiv{
-    gap:15%;
+    gap:5%;
     text-align: left;
     display: flex;
  

@@ -131,8 +131,8 @@ h6 {
     margin-left: 5%;
     margin-top: 5%;
     max-width: 100%;
-    width: 110%;
-    height: 30%;
+    width: 85%;
+    height: 31%;
     overflow: hidden;
   }
 
@@ -347,7 +347,7 @@ h2{
     font-size: 175%;
     color:#353535;
     width:100%;
-    margin-left: 20%;
+    margin-left: 15%;
         margin-bottom: 2.5%;
     font-weight: bold;
 }
@@ -359,7 +359,7 @@ h2{
     margin-top: 1%;
     margin-bottom: 1.5%;
     font-size: 150%;
-    margin-left: 20%;
+    margin-left: 15%;
     color:#353535;
   }
 
@@ -420,7 +420,7 @@ div #about{
 
 }
 #aboutSubDiv{
-    gap:10%;
+    gap:5%;
     text-align: left;
     display: flex;
  

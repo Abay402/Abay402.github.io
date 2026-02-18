@@ -126,7 +126,7 @@ h6 {
     color: #fff;
     font-size: 150%;
     font-weight: 600;
-    letter-spacing: 255%;
+    letter-spacing: 25%;
     margin:0;
     padding: 1% 2%;
     text-transform: uppercase;
@@ -243,7 +243,7 @@ footer img#github{
     color: #fff;
     font-size: 125%;
     font-weight: 600;
-    letter-spacing: 255%;
+    letter-spacing: 25%;
     margin:0;
     padding: 2% 4%;
     text-transform: uppercase;
@@ -255,7 +255,7 @@ footer img#github{
     color: #fff;
     font-size: 125%;
     font-weight: 600;
-    letter-spacing: 255%;
+    letter-spacing: 25%;
     margin:0;
     padding: 1.25% 4%;
     text-transform: uppercase;
@@ -437,7 +437,7 @@ div #about{
     color: #000000;
     font-size: 100%;
     font-weight: 600;
-    letter-spacing: 255%;
+    letter-spacing: 25%;
     margin:0;
     padding: 3.25% 4%;
     text-transform: uppercase;

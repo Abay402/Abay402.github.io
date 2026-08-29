@@ -1,19 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 :root{
-    --primaryColor: #313338;
-    --secondaryColor: #ccd1de;
+    --primaryColor: #2f323a;
+    --secondaryColor: #c6cfe5;
+    --thirdColor: #16181d;
 }
 
 body{
     min-height: 100vh;
     background: radial-gradient(
         circle,
-        #44474e 0%,
+        #464e54 0%,
         var(--primaryColor) 50%,
-        #1f2024 100%
+        #1f1d24 100%
     );
 }
 section{
-   
+   height: 950px;
 }
 
 /* Home Page Heading */
@@ -23,12 +29,12 @@ h1{
     font-size: 50px;
 }
 
-
 #HomeDiv{
     display:grid;
     justify-content: center;
     align-items: center;
-    
+    grid-template-columns: minmax(0, 1fr);
+
 }
 #HomeImage{
     text-align: center;
@@ -44,7 +50,7 @@ h1{
     display:flex;
     justify-content: center;
     align-items: center;
-   
+    margin-bottom: 15px;
 
 }
 .Icons {
@@ -65,8 +71,61 @@ a.Icons:hover{
 }
 
 #HomeSum{
-
+    max-width: 70%;
+    margin: 0 auto;
+    
+}
+#HomeSumText{
+    color: var(--secondaryColor);
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 200%;
+    
 }
 #HomeNav{
-
+    width:80%;
+    height:100px;
+    display:flex;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom: 20px;
 }
+.NavBox {
+    width: 15%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid var(--secondaryColor);
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    border-radius: 30px;
+}
+.NavBox:hover{
+    transform:scale(1.2);
+}
+.NavBoxText{
+    color: var(--secondaryColor);
+    font-size: 200%;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.HorizontalLine{
+
+    border:none;
+    border-top:2px solid var(--secondaryColor);
+    width:80%;
+    margin: 0 auto;
+  
+}
+

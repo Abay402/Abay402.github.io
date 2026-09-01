@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <title>Abayjit Sidhu's Portfolio</title>
+    <link rel="icon" type="image/png" href="PortfolioIcon.png">
 </head>
 <body>
     <!-- Home Page -->
@@ -86,10 +88,10 @@
             
             <div class="ProjectsSliderContainer">
 
-                <div class="ProjectsBox" data-href="index.html">
+                <div class="ProjectsBox" data-href="projectTemplate.html">
                     <div class="ProjectsSliderImageBox">
                         
-                        <img class="ProjectSliderCrop" src="HomeImage.jpg" alt="Picture Of Abayjit Sidhu">
+                        <img class="ProjectSliderCrop" src="Screenshot 2026-09-01 172447.png" alt="Picture Of Abayjit Sidhu">
                         
                     </div>
                     <div class="ProjectsSliderTextBox">
@@ -172,9 +174,11 @@
         </div>
 
         <div id="ProjectOverlay">
-            <button id="CloseProject">×</button>
-
-            <iframe id="ProjectFrame"></iframe>
+            <div id="ProjectBackdrop"></div>
+            <div id="ProjectWindow">
+                <iframe id="ProjectFrame"></iframe>
+                <button id="CloseProject">×</button>
+            </div>
         </div>
         
 
@@ -378,9 +382,13 @@
 
         </div>
 
+        <div id="ImageOverlay" onclick="closeImage(event)">
+            <img id="EnlargedImage" onclick="closeImage(event)">
+        </div>
     </section>
 
     <script src="ProjectsSlider.js"></script>
+    <script src="ControlProjectPage.js"></script>
 </body>
 
 </html>

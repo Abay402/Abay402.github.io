@@ -2,17 +2,24 @@ const containers = document.querySelectorAll(".ProjectsSliderContainer");
 const projectOverlay = document.getElementById("ProjectOverlay");
 const projectFrame = document.getElementById("ProjectFrame");
 const closeProject = document.getElementById("CloseProject");
-
+const ProjectBackdrop = document.getElementById("ProjectBackdrop");
 closeProject.addEventListener("click", () => {
 
     projectOverlay.style.display = "none";
 
     projectFrame.src = "";
-
     document.body.style.overflow = "";
 
 });
 
+ProjectBackdrop.addEventListener("click", () => {
+
+    projectOverlay.style.display = "none";
+
+    projectFrame.src = "";
+    document.body.style.overflow = "";
+
+});
 
 containers.forEach(container => {
 
@@ -63,7 +70,7 @@ containers.forEach(container => {
             if (link) {
                 projectFrame.src = link;
 
-                projectOverlay.style.display = "block";
+                projectOverlay.style.display = "flex";
 
                 document.body.style.overflow = "hidden";
             }
@@ -205,3 +212,18 @@ document.querySelectorAll('.ContactsBoxHome').forEach(box => {
         window.location.href = box.dataset.href;
     });
 });
+
+function openImage(imageSrc) {
+    const overlay = document.getElementById("ImageOverlay");
+    const image = document.getElementById("EnlargedImage");
+
+    image.src = imageSrc;
+    overlay.style.display = "flex";
+}
+
+function closeImage(event) {
+    if (event.target === document.getElementById("ImageOverlay") || event.target === document.getElementById("EnlargedImage")) {
+        document.getElementById("ImageOverlay").style.display = "none";
+    }
+}
+

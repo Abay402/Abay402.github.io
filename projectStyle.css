@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+    color-scheme: light dark;
+}
+
+
+:root{
+    --primaryColor: #2f323a;
+    --secondaryColor: #b2b7c3;
+    --secondaryColorDark:#8c9097;
+    --secondaryColorSlightDark:#b2b6c1;
+    --thirdColor: #16181d;
+}
+
+body{
+    font-family: "Caacupe One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    min-height: 100vh;
+    background: radial-gradient(
+        circle,
+        #353b3f 0%,
+        var(--primaryColor) 50%,
+        #1f1d24 100%
+    );
+     overflow-x: hidden;
+}
+section{
+   height: 950px;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}   
+
+h1{
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin: 0;
+    color: var(--secondaryColor);
+}
+h2{
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--secondaryColorDark);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin: 0;
+    color: var(--secondaryColor);
+    margin-bottom: 20px;
+}
+h4{
+    color: var(--secondaryColorSlightDark);
+    font-size: 120%;
+    margin: auto 0;
+}
+#ProjectDiv{
+    max-width: 95%;
+    max-height: 95%;
+    height:95%;
+    width:95%;
+}
+
+.TextFlexDiv{
+    display:flex;
+
+    gap: 5px;
+
+}
+.TextLabel{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--secondaryColorSlightDark);
+    margin: 0;
+    font-weight: bold;
+}
+
+.Text{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--secondaryColorSlightDark);
+    margin: 0;
+}
+.VideoText{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--secondaryColorSlightDark);
+    margin: 0;
+    text-align: center;
+}
+
+.SubSectionsDiv{
+    margin-top: 20px;
+    display:flex;
+    width: 100%;
+    gap:55px;
+    margin-bottom: 50px;
+}
+
+.SubSectionsText{
+    
+    align-items: flex-start;
+    width: 20%;
+}
+
+.TextLabel#SubLabel{
+    font-size: 30px;
+    width:150%;
+
+}
+.TextLabel#LinkLabel{
+    font-size: 30px;
+    width:150%;
+    cursor: pointer;
+}
+.TextLabel#LinkLabel:hover{
+    color: var(--thirdColor)
+}
+.Text#SubText{
+    margin-top:10px;
+}
+
+
+#VideosDiv{
+    margin-top:30px;
+    width:100%;
+    height: 100%;
+}
+
+#MainVideo {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.VideoCarousel {
+    position: relative;
+    width: 100%;
+}
+
+.VideoList {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+    height: 150px;
+}
+
+.VideoItem {
+    flex: 0 0 200px;
+    cursor: pointer;
+    
+}
+.VideoItem.Selected img{
+    outline: 1px solid white;
+    outline-offset: -3px;
+}
+.VideoItem img {
+    width: 100%;
+    display: block;
+    transition: transform 0.2s;
+    border-radius: 20px;
+}
+
+.VideoItem:hover{
+    transform: scale(1.02);
+}
+
+.CarouselArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 45px;
+    height: 45px;
+    
+    border: none;
+    border-radius: 50%;
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    
+    cursor: pointer;
+    z-index: 2;
+}
+
+.CarouselArrow.left {
+    left: 10px;
+}
+
+.CarouselArrow.right {
+    right: 10px;
+}
+
+.CarouselArrow:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+#ImageGalleryDiv{
+
+    width: 100%;
+    height:500px;
+    max-height: 100%;
+}
+
+.ImagesDiv {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 1%;
+    margin-top: 25px;
+}
+.ImagesDiv img{
+    width: 24%;
+    max-width: 24%;
+    height: 100%;
+    display: block;
+    transition: transform 0.2s;
+    border-radius: 15px;
+    object-fit:cover;
+    background-color: var(--thirdColor);
+    user-select: none;
+}
+.ImagesDiv img:hover{
+    cursor:zoom-in;
+    transform: scale(1.05);
+}
+
+
+#DownloadDiv{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 80%;
+    height: 35%;
+    gap:5%;
+    overflow: hidden;
+    align-items: center;
+ 
+}
+
+.DownloadBox{
+    width: 24%;
+    height:20%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 3px solid var(--secondaryColorSlightDark);
+    text-align: center;
+    display: flex;
+    margin-top:1%;
+    border-radius: 30px;
+    cursor:pointer;
+    background-color: #24262c;
+    text-transform: uppercase;
+    gap: 10%;
+}
+
+.DownloadBox:hover{
+    transform:scale(1.1);
+}
+
+.DownloadBox img{
+    height: 65%;
+    width: 20%;
+}
+#Git img{
+    margin-right: 10px;
+}

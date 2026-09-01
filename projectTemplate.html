@@ -1,0 +1,169 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectStyle.css">
+</head>
+<body>
+    <section>
+        <div id="ProjectDiv">
+            <h1>Project Title</h1>
+
+            <h2>Made in this engine, date</h2>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Summary:</p>
+                <p class="Text">A 2d roguelike asdsakdakdkkdkad </p>
+            </div>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Roles:</p>
+                <p class="Text">Project Lead / Developer / Desginer / Artist</p>
+            </div>
+            
+            <div id="VideosDiv">
+                <h3>Videos</h3>
+
+                <iframe
+                    id="MainVideo"
+                    src="https://www.youtube.com/embed/UY0LgXzlK20"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="VideoCarousel">
+                    <button class="CarouselArrow left" onclick="scrollVideos(-1)">
+                        &#10094;
+                    </button>
+
+                    <div class="VideoList" id="VideoList">
+
+                    
+                        <div class="VideoItem Selected" onclick="loadVideo('UY0LgXzlK20', this)">
+                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                            <p class="VideoText">Main Video</p>
+                        </div>
+
+                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
+                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                            <p class="VideoText">Jumping Mechanic</p>
+                        </div>
+
+                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
+                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                            <p class="VideoText">Shooting Mechanic</p>
+                        </div>
+
+                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
+                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                            <p class="VideoText">Respawn System</p>
+                        </div>
+
+                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
+                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                            <p class="VideoText">Dialogue System</p>
+                        </div>
+
+                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
+                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                            <p class="VideoText">Event System</p>
+                        </div>
+
+                    </div>
+
+                    <button class="CarouselArrow right" onclick="scrollVideos(1)">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Goals</p>
+                    <p class="Text" id="SubText">The goal of this project was to create a polished and engaging experience that was easy to understand and enjoyable to use.</p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Approach</p>
+                    <p class="Text" id="SubText">I focused on building the core features first, then refined the design and functionality through testing and iteration.</p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Challenges</p>
+                    
+                    <div class="TextFlexDiv">
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">The final result was a functional and polished project that successfully achieved the original goals while providing a solid foundation for future improvements. </p>
+                    </div>
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Results</p>
+                    <p class="Text" id="SubText">One of the biggest challenges was balancing functionality with performance while working through unexpected technical issues during development.</p>
+                    
+                </div>
+            </div>
+
+            <h3>Features Implemented</h3>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel">Event System &#x1F441</p>
+                    <p class="Text" id="SubText">A highly dynamic event system that can be triggered via gameplay moments and dialogue</p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('Screenshot 2026-09-01 172447.png')">Dialogue System &#x1F441</p>
+                    <p class="Text" id="SubText">A robust dialogue system that parses JSON files to construct dialogue and responses</p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel">Respawn System</p>
+                    <p class="Text" id="SubText">A persistent respawn system that enforces replayability</p>
+                    
+                </div>
+                
+            </div>
+
+            <div id="ImageGalleryDiv">
+                <h3>Images</h3>
+
+                <div class="ImagesDiv">
+                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
+                    <img src="Screenshot 2026-09-01 172447.png" onclick="openImage(this)">
+                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
+                    <img src="HomeImage.jpg" onclick="openImage(this)">
+                </div>
+
+                <div class="ImagesDiv">
+                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
+                    
+                </div>
+
+               
+            </div>
+
+         
+            
+
+
+            <div id="DownloadDiv">
+
+                <div class="DownloadBox" id="Git" data-href="mailto:abayssidhu@outlook.com">
+                    <img src="GitHubLogo.png">
+                    <h4>Source Code</h4>
+                </div>
+                <div class="DownloadBox" data-href="https://www.linkedin.com/in/abayjit-sidhu/">
+                    <img src="DownloadLogo.png">
+                    <h4>Playable Build</h4>
+                </div>
+
+               
+            </div>
+        </div>
+
+    </section>
+    <script src="VideoGallery.js"></script>
+</body>
+
+</html>

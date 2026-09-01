@@ -28,7 +28,9 @@ body{
 section{
    height: 950px;
 }
-
+#Contacts{
+   height: 250px;
+}
 .PageSum{
     color: var(--secondaryColor);
     text-align: center;
@@ -154,12 +156,13 @@ a.Icons:hover{
     
 }
 #HomeNav{
-    width:80%;
+    width:60%;
     height:100px;
     display:flex;
     margin: 0 auto;
     margin-top:50px;
     margin-bottom: 20px;
+    
 }
 .NavBox {
     width: 15%;
@@ -172,6 +175,7 @@ a.Icons:hover{
     text-align: center;
     display: flex;
     border-radius: 30px;
+    background-color: #1e2026;
 }
 .NavBox:hover{
     transform:scale(1.2);
@@ -400,7 +404,7 @@ a.Icons:hover{
     align-items: center;
     box-sizing: border-box;
     border: 3px solid var(--secondaryColor);
- 
+    background-color: #1e2026;
     text-align: center;
     display: flex;
     margin-top:1%;
@@ -433,6 +437,41 @@ a.Icons:hover{
     text-align: right;
     overflow: hidden;
     margin-right:5px
+}
+
+#ContactsDiv{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 80%;
+    height: 35%;
+    gap:15%;
+    overflow: hidden;
+     align-items: center;
+     margin-top:4%;
+}
+
+.ContactsBox,
+.ContactsBoxHome{
+    width: 24%;
+    height:70%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 3px solid var(--secondaryColor);
+    text-align: center;
+    display: flex;
+    margin-top:1%;
+    border-radius: 30px;
+    cursor:pointer;
+    background-color: #1e2026;
+        text-transform: uppercase;
+}
+
+.ContactsBox:hover,
+.ContactsBoxHome:hover{
+    transform:scale(1.1);
 }
 .HorizontalLine{
 

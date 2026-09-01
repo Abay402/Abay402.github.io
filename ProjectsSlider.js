@@ -194,3 +194,14 @@ containers.forEach(container => {
     });
 
 });
+document.querySelectorAll('.ContactsBox').forEach(box => {
+    box.addEventListener('click', () => {
+        window.open(box.dataset.href, '_blank');
+    });
+});
+
+document.querySelectorAll('.ContactsBoxHome').forEach(box => {
+    box.addEventListener('click', () => {
+        window.location.href = box.dataset.href;
+    });
+});

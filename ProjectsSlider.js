@@ -20,10 +20,12 @@ ProjectBackdrop.addEventListener("click", () => {
     document.body.style.overflow = "";
 
 });
-
+const isMobile = window.innerWidth <= 500 || window.innerWidth <= 1024;
 containers.forEach(container => {
 
-    let boxes = Array.from(container.children);
+        let boxes = Array.from(
+        container.querySelectorAll(".ProjectsBox")
+    );
 
     if (boxes.length < 3) return;
 
@@ -55,10 +57,131 @@ containers.forEach(container => {
 
     updateClasses();
 
-
+    
     container.addEventListener("click", event => {
 
         const clicked = event.target.closest(".ProjectsBox");
+        const leftArrow = event.target.closest(".ProjectsLeftButton");
+        const rightArrow = event.target.closest(".ProjectsRightButton");
+
+        // LEFT ARROW
+        if (leftArrow) {
+            // Run the same logic as clicking the left ProjectsBox
+            const oldPositions = new Map();
+
+            boxes.forEach(box => {
+                oldPositions.set(box, box.getBoundingClientRect());
+            });
+
+            const incoming = boxes[boxes.length - 1];
+
+            container.insertBefore(incoming, boxes[0]);
+
+            boxes = Array.from(container.querySelectorAll(".ProjectsBox"));
+
+            updateClasses();
+
+            boxes.forEach(box => {
+                const oldRect = oldPositions.get(box);
+
+                if (!oldRect) return;
+
+                const newRect = box.getBoundingClientRect();
+                const x = oldRect.left - newRect.left;
+                if (!isMobile){
+                box.animate(
+                    [
+                        { transform: `translateX(${x}px)` },
+                        { transform: "translateX(0)" }
+                    ],
+                    {
+                        duration: 500,
+                        easing: "ease",
+                        fill: "none"
+                    }
+                );
+                }
+            });
+
+            const newLeft = boxes[0];
+            if (!isMobile){
+            newLeft.animate(
+                [
+                    {
+                        transform: `translateX(${-container.offsetWidth}px)`
+                    },
+                    {
+                        transform: "translateX(0)"
+                    }
+                ],
+                {
+                    duration: 500,
+                    easing: "ease"
+                }
+            );
+            }
+            return;
+        }
+
+        // RIGHT ARROW
+        if (rightArrow) {
+            // Run the same logic as clicking the right ProjectsBox
+            const oldPositions = new Map();
+
+            boxes.forEach(box => {
+                oldPositions.set(box, box.getBoundingClientRect());
+            });
+
+            container.appendChild(boxes[0]);
+
+            boxes = Array.from(container.querySelectorAll(".ProjectsBox"));
+
+            updateClasses();
+
+            boxes.forEach(box => {
+                const oldRect = oldPositions.get(box);
+
+                if (!oldRect) return;
+
+                const newRect = box.getBoundingClientRect();
+                const x = oldRect.left - newRect.left;
+                if (!isMobile){
+                box.animate(
+                    [
+                        { transform: `translateX(${x}px)` },
+                        { transform: "translateX(0)" }
+                    ],
+                    {
+                        duration: 500,
+                        easing: "ease",
+                        fill: "none"
+                    }
+                );
+                }
+              
+            });
+
+            const newRight = boxes[2];
+            if (!isMobile){
+            newRight.animate(
+                [
+                    {
+                    transform: `translateX(${container.offsetWidth}px)`
+                    },
+                    {
+                    transform: "translateX(0)"
+                    }
+                ],
+                {
+                    duration: 500,
+                    easing: "ease"
+                }
+            );
+            }
+      
+
+            return;
+        }
 
         if (!clicked) return;
 
@@ -96,7 +219,7 @@ containers.forEach(container => {
 
             container.insertBefore(incoming, boxes[0]);
 
-            boxes = Array.from(container.children);
+            boxes = Array.from(container.querySelectorAll(".ProjectsBox"));
 
             updateClasses();
 
@@ -151,7 +274,7 @@ containers.forEach(container => {
 
             container.appendChild(boxes[0]);
 
-            boxes = Array.from(container.children);
+            boxes = Array.from(container.querySelectorAll(".ProjectsBox"));
 
             updateClasses();
 

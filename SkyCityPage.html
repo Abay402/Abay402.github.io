@@ -1,0 +1,172 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectStyle.css">
+    
+</head>
+<body>
+    <section>
+        <div id="ProjectDiv">
+            <h1>Sky City Fugitive</h1>
+
+            <h2>Made in Unreal Engine 5, using C++ and Blueprints, 2024</h2>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Summary:</p>
+                <p class="Text">A 2d Platformer Soulslike Demo that takes place in a futuristic Cyberpunk-esque world</p>
+            </div>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Roles:</p>
+                <p class="Text">Project Lead / Developer / Desginer / Artist</p>
+            </div>
+            
+            <div id="VideosDiv">
+                <h3>Videos</h3>
+
+                <iframe
+                    id="MainVideo"
+                    src="https://www.youtube.com/embed/UY0LgXzlK20"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="VideoCarousel">
+                    <button class="CarouselArrow left" onclick="scrollVideos(-1)">
+                        &#10094;
+                    </button>
+
+                    <div class="VideoList" id="VideoList">
+
+                    
+                        <div class="VideoItem Selected" onclick="loadVideo('UY0LgXzlK20', this)">
+                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                            <p class="VideoText">Main Video</p>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <button class="CarouselArrow right" onclick="scrollVideos(1)">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Goals</p>
+                    <p class="Text" id="SubText">This was my Capstone Project at College and so I really wanted to create robust and dynamic systems. The systems being a persistent respawning system, a dialogue system and an event system</p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Approach</p>
+                    <p class="Text" id="SubText">My approach for this project was to create these systems by communicating C++ logic with the Blueprints interface. 
+                        I also wanted the dialogue system to be easy to edit and design so I opted for an XML structure to design the dialogue. I also wanted to make the event system work in hand with the other systems in the project.
+                    </p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Challenges</p>
+                    
+                    <div class="TextFlexDiv">
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Limited Skill in 2D art impacted design decisions </p>
+
+                    </div>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Got stuck on working with delegates as I'd never used them before </p>
+                    </div>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Cut features from project because of time constraints </p>
+                    </div>
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Results</p>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Implemented an easy to use dialogue system that parses dialogue scripts specific to each NPC, allowing for endless amounts of dialogue </p>
+                    </div>
+                    
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Created an event system that can modify gameplay behaviours, set off sequences, and combine with the dialogue system to allow dialogue to trigger events. </p>
+                    </div>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Made a persistent respawning system that is very similar to respawning systems you would find in other soulslikes. </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Features Implemented</h3>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('EventManager.png')">Event System &#x1F441</p>
+                    <p class="Text" id="SubText">The event system I created allows for any actor to subscribe to events that are triggered. For this demo some events that are triggered are; at the end of the opening 
+                        dialogue an event is triggered that kills the guard and starts the game. Another event is towards the demo when the player activates a switch to turn off the prison alarm.
+                    </p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('DialogueScript.png')">Dialogue System &#x1F441</p>
+                    <p class="Text" id="SubText">The dialogue system uses an XML to design the dialogue for the specific NPC including player responses. The XML file is parsed by a dialogue component
+                        that a speakable NPC has attached to them. This allows for unique dialogue or generic dialogue for NPCs on per basis.
+                    </p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel">Respawn System</p>
+                    <p class="Text" id="SubText">The respawn system uses these "Recharge Stations" as beacons or checkpoints where when the player uses them, it becomes their new spawnpoint. Like any other soulslike, on death the 
+                        enemies in the level are respawned as well as the player.
+                    </p>
+                    
+                </div>
+                
+            </div>
+
+            <div id="ImageGalleryDiv">
+                <h3>Images</h3>
+
+                <div class="ImagesDiv">
+                    <img src="LoadDiaogue.png" onclick="openImage(this)">
+                    <img src="DialogueScript.png" onclick="openImage(this)">
+                    <img src="EventManager.png" onclick="openImage(this)">
+                </div>
+            </div>
+
+            <div id="DownloadDiv">
+
+                <div class="DownloadBox" id="Git" data-href="">
+                    <img src="GitHubLogo.png">
+                    <h4>Source Code</h4>
+                </div>
+                <div class="DownloadBox" data-href="">
+                    <img src="DownloadLogo.png">
+                    <h4>Playable Build</h4>
+                </div>
+
+               
+            </div>
+        </div>
+
+    </section>
+    <script src="VideoGallery.js"></script>
+</body>
+
+</html>

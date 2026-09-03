@@ -35,6 +35,7 @@ section{
 
 #Contacts{
    height: 200px;
+   margin-bottom:120px
 }
 .PageSum{
     color: var(--secondaryColor);
@@ -593,13 +594,15 @@ h4{
 }
 .ProjectsLeft p,
 .ProjectsRight p {
-    font-size: 45%;
+    font-size: 50%;
+    margin-top:10px
 }
 
 .ProjectsMiddle p {
-    font-size: 130%;
+    font-size: 150%;
     max-width: 90%;
     margin: 0 auto;
+    margin-top:10px
 }
 .ProjectsLeft h2,
 .ProjectsRight h2 {
@@ -1011,7 +1014,7 @@ a.Icons:hover{
     border-top:3px solid var(--secondaryColor);
     width:100%;
     margin: 0 auto;
-    margin-top:7%;
+    margin-top:3%;
 }
 
 

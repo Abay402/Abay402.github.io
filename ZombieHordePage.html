@@ -8,16 +8,16 @@
 <body>
     <section>
         <div id="ProjectDiv">
-            <h1>Project Title</h1>
+            <h1>Zombie Horde Game</h1>
 
-            <h2>Made in this engine, date</h2>
+            <h2>Made in a SDL Framework, using C++, 2023</h2>
             <div class="TextFlexDiv">
                 <p class="TextLabel">Summary:</p>
-                <p class="Text">A 2d roguelike asdsakdakdkkdkad </p>
+                <p class="Text">A 2D Top-Down horde killing game </p>
             </div>
             <div class="TextFlexDiv">
                 <p class="TextLabel">Roles:</p>
-                <p class="Text">Project Lead / Developer / Desginer / Artist</p>
+                <p class="Text">Project Lead / Developer / Desginer</p>
             </div>
             
             <div id="VideosDiv">
@@ -25,7 +25,7 @@
 
                 <iframe
                     id="MainVideo"
-                    src="https://www.youtube.com/embed/UY0LgXzlK20"
+                    src="https://www.youtube.com/embed/BHV95-cx4FQ"
                     allowfullscreen>
                 </iframe>
 
@@ -37,34 +37,9 @@
                     <div class="VideoList" id="VideoList">
 
                     
-                        <div class="VideoItem Selected" onclick="loadVideo('UY0LgXzlK20', this)">
-                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
+                        <div class="VideoItem Selected" onclick="loadVideo('BHV95-cx4FQ', this)">
+                            <img src="https://img.youtube.com/vi/BHV95-cx4FQ/mqdefault.jpg">
                             <p class="VideoText">Main Video</p>
-                        </div>
-
-                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
-                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
-                            <p class="VideoText">Jumping Mechanic</p>
-                        </div>
-
-                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
-                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
-                            <p class="VideoText">Shooting Mechanic</p>
-                        </div>
-
-                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
-                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
-                            <p class="VideoText">Respawn System</p>
-                        </div>
-
-                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
-                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
-                            <p class="VideoText">Dialogue System</p>
-                        </div>
-
-                        <div class="VideoItem" onclick="loadVideo('UY0LgXzlK20', this)">
-                            <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg">
-                            <p class="VideoText">Event System</p>
                         </div>
 
                     </div>
@@ -81,12 +56,15 @@
                 
                 <div class="SubSectionsText">
                     <p class="TextLabel" id="SubLabel">Goals</p>
-                    <p class="Text" id="SubText">The goal of this project was to create a polished and engaging experience that was easy to understand and enjoyable to use.</p>
+                    <p class="Text" id="SubText">This was my Midstone Project at College and so I really wanted to showcase the skills I had learnt up to that point. This was also
+                        my first time leading other people on a project as I was the co-lead on the team.</p>
                     
                 </div>
                 <div class="SubSectionsText">
                     <p class="TextLabel" id="SubLabel">Approach</p>
-                    <p class="Text" id="SubText">I focused on building the core features first, then refined the design and functionality through testing and iteration.</p>
+                    <p class="Text" id="SubText">For this project I emphasized communication amongst the team. Setting up weekly meetings and progress check as well as designing most of the systems. 
+                       With the limitation of using a SDL Framework for the project, I really wanted to demonstrate my understanding of the library.
+                    </p>
                     
                 </div>
                 <div class="SubSectionsText">
@@ -94,13 +72,37 @@
                     
                     <div class="TextFlexDiv">
                         <p class="TextLabel">&#x2022</p>
-                        <p class="Text">The final result was a functional and polished project that successfully achieved the original goals while providing a solid foundation for future improvements. </p>
+                        <p class="Text">Gun rotating towards the mouse location was a challenge in the framework</p>
+
                     </div>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Limited with the amount of objects that could exist in one scene due to inexperience with the framework</p>
+                    </div>
+
                 </div>
                 <div class="SubSectionsText">
                     <p class="TextLabel" id="SubLabel">Results</p>
-                    <p class="Text" id="SubText">One of the biggest challenges was balancing functionality with performance while working through unexpected technical issues during development.</p>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Created a workaround for enemy spawning and projectile spawning by reusing enemy and projectile objects instead of deleting them and creating new ones. </p>
+                    </div>
                     
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Improved knowledge of SDL and C++ allowed for dynamic gun rotations</p>
+                    </div>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Created a custom Item Drops system at the tail end of the project to make for better and unique gameplay experiences </p>
+                    </div>
                 </div>
             </div>
 
@@ -109,57 +111,40 @@
             <div class="SubSectionsDiv">
                 
                 <div class="SubSectionsText">
-                    <p class="TextLabel" id="LinkLabel">Event System &#x1F441</p>
-                    <p class="Text" id="SubText">A highly dynamic event system that can be triggered via gameplay moments and dialogue</p>
+                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('ItemDrops.png')">Item Drops &#x1F441</p>
+                    <p class="Text" id="SubText">The inspiration I had for this system was the drops system from Call Of Duty Zombies. 
+                        I designed this system to have a random chance of dropping an item any time an enemy is killed. Then if an item is dropped it randomly selects from the list of items that are in the game.
+                    </p>
                     
                 </div>
                 <div class="SubSectionsText">
-                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('Screenshot 2026-09-01 172447.png')">Dialogue System &#x1F441</p>
-                    <p class="Text" id="SubText">A robust dialogue system that parses JSON files to construct dialogue and responses</p>
+                    <p class="TextLabel" id="LinkLabel">Enemy Spawning</p>
+                    <p class="Text" id="SubText">I set up over a dozen spawn locations that the enemy could spawn in and I put those locations into an array. Every time an enemy spawned after a set amount of time, 
+                        the spawner class would randomly choose a location from this array and spawn that enemy at that location.
+                    </p>
                     
                 </div>
-                <div class="SubSectionsText">
-                    <p class="TextLabel" id="LinkLabel">Respawn System</p>
-                    <p class="Text" id="SubText">A persistent respawn system that enforces replayability</p>
-                    
-                </div>
-                
+
             </div>
 
             <div id="ImageGalleryDiv">
                 <h3>Images</h3>
 
                 <div class="ImagesDiv">
-                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
-                    <img src="Screenshot 2026-09-01 172447.png" onclick="openImage(this)">
-                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
-                    <img src="HomeImage.jpg" onclick="openImage(this)">
+                    <img src="shoot.png" onclick="openImage(this)">
+                    <img src="ItemDrops.png" onclick="openImage(this)">
+        
                 </div>
-
-                <div class="ImagesDiv">
-                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
-                    
-                </div>
-                <div class="ImagesDiv">
-                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
-                    <img src="Screenshot 2026-09-01 172447.png" onclick="openImage(this)">
-                    <img src="https://img.youtube.com/vi/UY0LgXzlK20/mqdefault.jpg" onclick="openImage(this)">
-                    <img src="HomeImage.jpg" onclick="openImage(this)">
-                </div>
-               
+                
             </div>
-
-         
-            
-
 
             <div id="DownloadDiv">
 
-                <div class="DownloadBox" id="Git" data-href="mailto:abayssidhu@outlook.com">
+                <div class="DownloadBox" id="Git" data-href="">
                     <img src="GitHubLogo.png">
                     <h4>Source Code</h4>
                 </div>
-                <div class="DownloadBox" data-href="https://www.linkedin.com/in/abayjit-sidhu/">
+                <div class="DownloadBox" data-href="">
                     <img src="DownloadLogo.png">
                     <h4>Playable Build</h4>
                 </div>

@@ -7,27 +7,27 @@ html {
 }
 
 
+
 :root{
-    --primaryColor: #2f323a;
-    --secondaryColor: #b2b7c3;
-    --secondaryColorDark:#8c9097;
-    --secondaryColorSlightDark:#b2b6c1;
-    --thirdColor: #16181d;
+    --primaryColor: #3D536B;
+    --secondaryColor: #DCE4EC;
+    --secondaryColorDark:#839bb2;
+    --secondaryColorSlightDark:#b2c0ce;
+    --thirdColor: #1a2631;
 }
 
 body{
     font-family: "Caacupe One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
     min-height: 100vh;
     background: radial-gradient(
         circle,
-        #353b3f 0%,
-        var(--primaryColor) 50%,
-        #1f1d24 100%
+        #496079 0%,
+        var(--primaryColor) 30%,
+        #141f2a 100%
     );
-     overflow-x: hidden;
+    overflow-x: hidden;
 }
 section{
    height: 950px;
@@ -99,17 +99,18 @@ h4{
 }
 
 .SubSectionsDiv{
-    margin-top: 20px;
+
     display:flex;
     width: 100%;
-    gap:55px;
+    gap:45px;
     margin-bottom: 50px;
 }
 
 .SubSectionsText{
     
     align-items: flex-start;
-    width: 20%;
+    width: auto;
+    flex: 1;
 }
 
 .TextLabel#SubLabel{
@@ -131,15 +132,19 @@ h4{
 
 
 #VideosDiv{
-    margin-top:30px;
-    width:100%;
-    height: 100%;
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content !important;
+    margin-bottom:70px;
+
+    
 }
 
 #MainVideo {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
+    
 }
 
 .VideoCarousel {
@@ -152,7 +157,7 @@ h4{
     gap: 15px;
     margin-top: 15px;
     overflow: hidden;
-    height: 150px;
+    height: auto;
 }
 
 .VideoItem {
@@ -210,21 +215,21 @@ h4{
 #ImageGalleryDiv{
 
     width: 100%;
-    height:500px;
+    height:auto;
     max-height: 100%;
 }
 
 .ImagesDiv {
     width: 100%;
-    height: 30%;
+    height: 100%;
     display: flex;
     gap: 1%;
     margin-top: 25px;
 }
 .ImagesDiv img{
-    width: 24%;
-    max-width: 24%;
-    height: 100%;
+    width: 250px;
+    max-width: 250px;
+    height: 200px;
     display: block;
     transition: transform 0.2s;
     border-radius: 15px;
@@ -263,7 +268,7 @@ h4{
     margin-top:1%;
     border-radius: 30px;
     cursor:pointer;
-    background-color: #24262c;
+    background-color: var(--thirdColor);
     text-transform: uppercase;
     gap: 10%;
 }
@@ -364,7 +369,8 @@ h4{
 .SubSectionsText{
     margin-top: 15px;
     align-items: flex-start;
-    width: 100%;
+    width: auto;
+    flex: 1;
 }
 
 .TextLabel#SubLabel{
@@ -521,7 +527,6 @@ h4{
     margin-top:1%;
     border-radius: 30px;
     cursor:pointer;
-    background-color: #24262c;
     text-transform: uppercase;
     gap:8%;
 }
@@ -634,7 +639,8 @@ h4{
 .SubSectionsText{
     margin-top: 15px;
     align-items: flex-start;
-    width: 100%;
+    width: auto;
+    flex: 1;
 }
 
 .TextLabel#SubLabel{
@@ -791,7 +797,6 @@ h4{
     margin-top:1%;
     border-radius: 30px;
     cursor:pointer;
-    background-color: #24262c;
     text-transform: uppercase;
     gap:21px;
 }

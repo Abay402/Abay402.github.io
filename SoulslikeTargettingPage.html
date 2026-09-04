@@ -1,0 +1,142 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectStyle.css">
+    
+</head>
+<body>
+    <section>
+        <div id="ProjectDiv">
+            <h1>Soulslike Targetting System</h1>
+
+            <h2>Made in Unreal Engine 5, using C++ and Blueprints, 2025</h2>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Summary:</p>
+                <p class="Text">An dynamic enemy targetting system.</p>
+            </div>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Roles:</p>
+                <p class="Text">Developer / Desginer</p>
+            </div>
+            
+            <div id="VideosDiv">
+                <h3>Videos</h3>
+
+                <iframe
+                    id="MainVideo"
+                    src="https://www.youtube.com/embed/xr9mLil-yGo"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="VideoCarousel">
+                    <button class="CarouselArrow left" onclick="scrollVideos(-1)">
+                        &#10094;
+                    </button>
+
+                    <div class="VideoList" id="VideoList">
+
+                    
+                        <div class="VideoItem Selected" onclick="loadVideo('xr9mLil-yGo', this)">
+                            <img src="https://img.youtube.com/vi/xr9mLil-yGo/mqdefault.jpg">
+                            <p class="VideoText">Main Video</p>
+                        </div>
+
+                    </div>
+
+                    <button class="CarouselArrow right" onclick="scrollVideos(1)">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Goals</p>
+                    <p class="Text" id="SubText">The main goal of this project was to create a dynamic enemy targetting system similar to the systems you can find in soulslikes games. I wanted this system to be easily resuable and scalable amongst projects.</p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Approach</p>
+                    <p class="Text" id="SubText">My approach in creating this system was to create the functions in C++ that would then be used in Blueprints. I also wanted this system to be performance light which influenced how enemies would be checked for.
+                    </p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Challenges</p>
+                    
+                    <div class="TextFlexDiv">
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Found difficulty in rotating the camera to face the targetted enemy while keeping the player in view.</p>
+
+                    </div>
+
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Results</p>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">System correctly targets the closest enemy within range of the player when the player activates the system </p>
+                    </div>
+                    
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Player can easily switch between targets</p>
+                    </div>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Camera auto locks on target and keeps them in the viewport whilst also making sure the player is in the viewport as well maintaining a third person view. Also works with moving targets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('TargetCheck.png')">Targetting System &#x1F441</p>
+                    <p class="Text" id="SubText">The targetting system has a target class that it looks for when the system is activated. 
+                        A box overlap check occurs around the player within a radius and all actors of type target class are added to a list of actors.
+                        The player is then able to switch between all of the actors and change their target. When the player locks onto a target, 
+                        the camera's rotation will become locked and will lock onto and follow the target.
+                    </p>
+                </div>
+           
+            </div>
+
+            <div id="ImageGalleryDiv">
+                <h3>Images</h3>
+
+                <div class="ImagesDiv">
+                    <img src="TargetCheck.png" onclick="openImage(this)">
+                    <img src="TargetSelect.png" onclick="openImage(this)">
+                </div>
+                
+            </div>
+
+            <div id="DownloadDiv">
+
+                <div class="DownloadBox" id="Git" data-href="">
+                    <img src="GitHubLogo.png">
+                    <h4>Source Code</h4>
+                </div>
+                <div class="DownloadBox" data-href="">
+                    <img src="DownloadLogo.png">
+                    <h4>Playable Build</h4>
+                </div>
+
+               
+            </div>
+        </div>
+
+    </section>
+    <script src="VideoGallery.js"></script>
+</body>
+
+</html>

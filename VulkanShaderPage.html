@@ -1,0 +1,91 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectStyle.css">
+    
+</head>
+<body>
+    <section>
+        <div id="ProjectDiv">
+            <h1>Multi Light Vulkan Shader</h1>
+
+            <h2>Made in a Vulkan Framework, using C++, 2024</h2>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Summary:</p>
+                <p class="Text">A Vulkan Shader that can display and utilize multiple lights of different colors </p>
+            </div>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Roles:</p>
+                <p class="Text"> Developer</p>
+            </div>
+            
+            <div id="VideosDiv">
+                <h3>Videos</h3>
+
+                <iframe
+                    id="MainVideo"
+                    src="https://www.youtube.com/embed/AfyHaZkgnpA"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="VideoCarousel">
+                    <button class="CarouselArrow left" onclick="scrollVideos(-1)">
+                        &#10094;
+                    </button>
+
+                    <div class="VideoList" id="VideoList">
+
+                    
+                        <div class="VideoItem Selected" onclick="loadVideo('AfyHaZkgnpA', this)">
+                            <img src="https://img.youtube.com/vi/AfyHaZkgnpA/mqdefault.jpg">
+                            <p class="VideoText">Main Video</p>
+                        </div>
+
+                    </div>
+
+                    <button class="CarouselArrow right" onclick="scrollVideos(1)">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <h3>Features Implemented</h3>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel" >Multi Light Shader </p>
+                    <p class="Text" id="SubText">This is the result of a multi light shader I made using a phong shader model in Vulkan. 
+                        This shader is able to take the position and colour of multiple lights and render them accurately. 
+                        This video showcases multiple different lights with different colours and positions bouncing off of a mario mesh.
+
+
+                    </p>
+                   
+                </div>
+            
+            </div>
+
+            <div id="DownloadDiv">
+
+                <div class="DownloadBox" id="Git" data-href="">
+                    <img src="GitHubLogo.png">
+                    <h4>Source Code</h4>
+                </div>
+                <div class="DownloadBox" data-href="">
+                    <img src="DownloadLogo.png">
+                    <h4>Playable Build</h4>
+                </div>
+
+               
+            </div>
+        </div>
+
+    </section>
+    <script src="VideoGallery.js"></script>
+</body>
+
+</html>

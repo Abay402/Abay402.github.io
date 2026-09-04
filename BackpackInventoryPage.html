@@ -1,0 +1,145 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectStyle.css">
+    
+</head>
+<body>
+    <section>
+        <div id="ProjectDiv">
+            <h1>Backpack Inventory System</h1>
+
+            <h2>Made in Unity, using C#, 2025</h2>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Summary:</p>
+                <p class="Text">A Scalable Backpack Inventory System </p>
+            </div>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Roles:</p>
+                <p class="Text">Developer / Desginer</p>
+            </div>
+            
+            <div id="VideosDiv">
+                <h3>Videos</h3>
+
+                <iframe
+                    id="MainVideo"
+                    src="https://www.youtube.com/embed/2Jl5wrxZc1M"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="VideoCarousel">
+                    <button class="CarouselArrow left" onclick="scrollVideos(-1)">
+                        &#10094;
+                    </button>
+
+                    <div class="VideoList" id="VideoList">
+
+                    
+                        <div class="VideoItem Selected" onclick="loadVideo('2Jl5wrxZc1M', this)">
+                            <img src="https://img.youtube.com/vi/2Jl5wrxZc1M/mqdefault.jpg">
+                            <p class="VideoText">Main Video</p>
+                        </div>
+
+                    </div>
+
+                    <button class="CarouselArrow right" onclick="scrollVideos(1)">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Goals</p>
+                    <p class="Text" id="SubText">The goal for this system was to create a modular inventory system that would be similar to the systems in Resident Evil and Escape From Tarkov.
+                    </p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Approach</p>
+                    <p class="Text" id="SubText">My approach for this system was to create a grid for the inventory so it would be easier to calculate inventory space and the amount of space an item takes up. I also decided to go further
+                        and add a backpack system on top of it where a backpack could be set to have different amount of storage.
+                    </p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Challenges</p>
+                    
+                    <div class="TextFlexDiv">
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Translating UI items to real world objects</p>
+
+                    </div>
+
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Results</p>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Created a system very similar to Resident Evil where the player has to do inventory management to make items fit by rotating the items.</p>
+                    </div>
+                    
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Communicated between UI and 3D by utilizing ScriptableObjects</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <h3>Features Implemented</h3>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('ItemData.png')">Inventory System &#x1F441</p>
+                    <p class="Text" id="SubText">To make the system dynamic and flexible, it utilizes scriptable objects where an item can be defined very easily. 
+                        Also the size and the amount of grids of the backpack can also be changed dynamically.
+                        When adding an item to backpacks inventory it will first check if the player even has a backpack and if so then it'll check if the backpack has space.
+                        To do this the backpack has inventory grids where the system can easily check if there is available space or not based on if an item is already occupying that space. 
+                        Also it checks if the item can fit in the inventory based on it size, 
+                        if not then it'll try adding the item to another grid if there is one available, otherwise it won't add the item to the inventory.
+                    </p>
+                
+                </div>
+               
+            </div>
+
+            <div id="ImageGalleryDiv">
+                <h3>Images</h3>
+
+                <div class="ImagesDiv">
+                    <img src="ItemData.png" onclick="openImage(this)">
+                    <img src="CheckForSpace.png" onclick="openImage(this)">
+                </div>
+                
+            </div>
+
+            <div id="DownloadDiv">
+
+                <div class="DownloadBox" id="Git" data-href="">
+                    <img src="GitHubLogo.png">
+                    <h4>Source Code</h4>
+                </div>
+                <div class="DownloadBox" data-href="">
+                    <img src="DownloadLogo.png">
+                    <h4>Playable Build</h4>
+                </div>
+
+               
+            </div>
+        </div>
+
+    </section>
+    <script src="VideoGallery.js"></script>
+</body>
+
+</html>

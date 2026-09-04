@@ -1,0 +1,145 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectStyle.css">
+    
+</head>
+<body>
+    <section>
+        <div id="ProjectDiv">
+            <h1>2D Lighting System</h1>
+
+            <h2>Made in GameMaker, 2024</h2>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Summary:</p>
+                <p class="Text">A 2D Lighting System that can be utilized to light any room. </p>
+            </div>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Roles:</p>
+                <p class="Text">Developer / Desginer</p>
+            </div>
+            
+            <div id="VideosDiv">
+                <h3>Videos</h3>
+
+                <iframe
+                    id="MainVideo"
+                    src="https://www.youtube.com/embed/8J8Jad9kcMo"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="VideoCarousel">
+                    <button class="CarouselArrow left" onclick="scrollVideos(-1)">
+                        &#10094;
+                    </button>
+
+                    <div class="VideoList" id="VideoList">
+
+                    
+                        <div class="VideoItem Selected" onclick="loadVideo('8J8Jad9kcMo', this)">
+                            <img src="https://img.youtube.com/vi/8J8Jad9kcMo/mqdefault.jpg">
+                            <p class="VideoText">Main Video</p>
+                        </div>
+
+                    </div>
+
+                    <button class="CarouselArrow right" onclick="scrollVideos(1)">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Goals</p>
+                    <p class="Text" id="SubText">The goal for this system was to utilize shaders to make vibrant and cool looking lighting without sacrificing performance.</p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Approach</p>
+                    <p class="Text" id="SubText">To achieve this goal I made sure to have a lighting manager to controls all of the lights and shaders instead of having every individual light control that as it would be costly
+                        to have hundreds of lights accessing the graphics api at once.
+                    </p>
+                    
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Challenges</p>
+                    
+                    <div class="TextFlexDiv">
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Configuring normal maps to work with this system</p>
+
+                    </div>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Displaying shadows</p>
+                    </div>
+
+                </div>
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="SubLabel">Results</p>
+
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">Hundreds of lights can be placed with any color and any amount of strength and will light up the room and characters without costing performance.</p>
+                    </div>
+                    
+                    <div class="TextFlexDiv">
+
+                        <p class="TextLabel">&#x2022</p>
+                        <p class="Text">The direction and angle of the light can also be modified to allow for specific lighting.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <h3>Features Implemented</h3>
+
+            <div class="SubSectionsDiv">
+                
+                <div class="SubSectionsText">
+                    <p class="TextLabel" id="LinkLabel" onclick="openImageLink('LightingShader.png')">Lighting System&#x1F441</p>
+                    <p class="Text" id="SubText">This system uses multiple shaders to create the lighting effect in the project. There's a lighting controller object that controls the lighting for every light in the project.
+                         There can be about 500+ lights in the level before the FPS drops below 60. The size, strength, color, and direction of the light can also be easily changed per light.
+                    </p>
+             
+                </div>
+            </div>
+
+            <div id="ImageGalleryDiv">
+                <h3>Images</h3>
+
+                <div class="ImagesDiv">
+                    <img src="LightingShader.png" onclick="openImage(this)">
+              
+                </div>
+                
+            </div>
+
+            <div id="DownloadDiv">
+
+                <div class="DownloadBox" id="Git" data-href="">
+                    <img src="GitHubLogo.png">
+                    <h4>Source Code</h4>
+                </div>
+                <div class="DownloadBox" data-href="">
+                    <img src="DownloadLogo.png">
+                    <h4>Playable Build</h4>
+                </div>
+
+               
+            </div>
+        </div>
+
+    </section>
+    <script src="VideoGallery.js"></script>
+</body>
+
+</html>

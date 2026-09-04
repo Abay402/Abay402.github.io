@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectStyle.css">
+    
+</head>
+<body>
+    <section>
+        <div id="ProjectDiv">
+            <h1>Artwork</h1>
+
+            <h2>Made in 3DS Max and Blender</h2>
+            <div class="TextFlexDiv">
+                <p class="TextLabel">Summary:</p>
+                <p class="Text">Have a look at some of the 3D models I've made </p>
+            </div>
+
+            <div id="ImageGalleryDiv">
+                <h3>Images</h3>
+
+                <div class="ImagesDivOnly">
+                    <div>
+                       <p class="TextLabel" id="SubLabel">2026 Bender(Blender)</p>
+                        <img src="Bender.png" onclick="openImage(this)">
+                    </div>
+   
+                    <div>
+                       <p class="TextLabel" id="SubLabel">2023 Bender(3DS Max)</p>
+                        <img src="BenderOld.png" onclick="openImage(this)">
+                    </div>
+                    <div>
+                       <p class="TextLabel" id="SubLabel">AK-47(3DS Max)</p>
+                        <img src="AK-47.png" onclick="openImage(this)">
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+    <script src="VideoGallery.js"></script>
+</body>
+
+</html>
